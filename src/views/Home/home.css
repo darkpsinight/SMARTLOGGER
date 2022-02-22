@@ -56,7 +56,7 @@
 
 .nosactions{
     text-align: center;
-    color: rgb(170, 168, 168);
+    color: #757575;
     font-family: 'futura',sans-serif;
 }
 
@@ -110,6 +110,7 @@
 .quote2{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .smarttitle{
@@ -117,5 +118,5 @@
 }
 
 .smarttext{
-
+    color: #757575;
 }
