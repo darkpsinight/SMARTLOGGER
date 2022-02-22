@@ -1,0 +1,121 @@
+.button {
+  margin-left: 10px;
+}
+
+.button1 {
+  background-color: rgb(62, 231, 231);
+  text-align: center;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 40px;
+}
+
+.button2 {
+  background-color: rgb(146, 146, 146);
+  text-align: center;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 40px;
+}
+
+.button:hover {
+  background-color: #757575;
+  color: white;
+}
+
+.button:focus {
+  background-color: #555555;
+  color: white;
+}
+
+.button p {
+  height: 30px;
+  width: 150px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "futura", sans-serif;
+  font-size: 15px;
+  padding-top: 4px;
+}
+
+.headertxt {
+  margin-top: 50px;
+}
+
+.nosvaleurs{
+    text-align: center;
+    font-size: large;
+    color: black;
+    font-family: 'futura',sans-serif;
+}
+
+.nosactions{
+    text-align: center;
+    color: rgb(170, 168, 168);
+    font-family: 'futura',sans-serif;
+}
+
+.iconsandtexts{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.icon1{
+    font-size: 100px;
+}
+
+.icon2{
+    font-size: 100px;
+}
+
+.icon3{
+    font-size: 100px;
+}
+
+.icon4{
+    font-size: 100px;
+}
+
+.engagement p{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.innovation p{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.exellence p{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.satisfaction p{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.quote2{
+    display: flex;
+    justify-content: center;
+}
+
+.smarttitle{
+    color: black;
+}
+
+.smarttext{
+
+}
