@@ -2,8 +2,11 @@ import React from 'react'
 import './home.css'
 import { AiOutlineUserSwitch } from 'react-icons/ai'
 import { HiOutlineLightBulb } from 'react-icons/hi'
-import { GiPodiumWinner } from 'react-icons/gi'
-import { GiStarsStack } from 'react-icons/gi'
+import { GiFactory, GiPodiumWinner, GiStarsStack } from 'react-icons/gi'
+import { RiLeafLine } from 'react-icons/ri'
+import { BiBuildingHouse } from 'react-icons/bi'
+import { FiMapPin } from 'react-icons/fi'
+
 
 const Home = () => {
   return (
@@ -30,12 +33,12 @@ const Home = () => {
           </div>
         </section>
       </div>
-
-      <div>
+      {/* Nos valeurs */}
+      <div className='row'>
         <section>
           <div className="quote">
             <div className="nosvaleurs">
-              <h1>Nos valeurs</h1>
+              <h1><b>Nos valeurs</b></h1>
             </div>
             <div className="nosactions">
               <h6>Nos actions se nourrissent chaque jours de nos valeurs</h6>
@@ -43,7 +46,7 @@ const Home = () => {
           </div>
         </section>
       </div>
-
+      {/* les 4 icones */}
       <div className="iconsandtexts">
         <div className="engagement">
           <div className="engagementicon">
@@ -65,24 +68,104 @@ const Home = () => {
         </div>
         <div className="satisfaction">
           <div className="satisfactionicon">
-          <GiStarsStack className="icon4"/>
+            <GiStarsStack className="icon4" />
           </div>
           <p>Satisfaction</p>
         </div>
       </div>
-
+      {/* Smart solution for a digital futur */}
       <div className="quote2">
         <div className="smarttitle">
-          <h1>Smart solution for a digital futur</h1>
+          <h1><b>Smart solution for a digital futur</b></h1>
         </div>
         <div className="smarttext">
-          <h6>Nous innovons pour satisfaire nos clients!</h6> <br />
-          <h6>SMART LOGGER présente plusieur solutions innovantes au service de l'industrie,</h6> <br />
+          <h6>Nous innovons pour satisfaire nos clients!</h6>
+          <h6>SMART LOGGER présente plusieur solutions innovantes au service de l'industrie,</h6>
           <h6>l'agriculture, et l'environnement.</h6>
         </div>
       </div>
+      {/* Les 4 images */}
+      <div>
+        <div>
+          <div className="content">
+            {/* card */}
+            <div className="card1">
+              <div className="icon"><i className="material-icons md-36"><RiLeafLine /></i></div>
+              <p className="text"><h4>Smart agriculture</h4><section>SMART IRRIGATION consiste à moderniser la gestion des champs irrigués.</section></p>
+            </div>
+            {/* end card */}
+            {/* card */}
+            <div className="card2">
+              <div className="icon"><i className="material-icons md-36"><GiFactory /></i></div>
+              <p className="text"><h4>Smart industry</h4><section>L'industrie 4.0 est une réorganisation compléte du mode de production avec les outils existants et donnant une plus grande importance au réseau.</section></p>
+            </div>
+            {/* end card */}
+            {/* card */}
+            <div className="card3">
+              <div className="icon"><i className="material-icons md-36"><BiBuildingHouse /></i></div>
+              <p className="text"><h4>SMART CITY</h4><section>Smart COLLECT</section>convertir vos déchets ménagers en source de revenu !</p>
+            </div>
+            {/* end card */}
+            {/* card */}
+            <div className="card4">
+              <div className="icon"><i className="material-icons md-36"><FiMapPin /></i></div>
+              <p className="text">Vide</p>
+            </div>
+            {/* end card */}
+          </div>
+        </div>
+      </div>
+      {/* Pourquoi nous ? */}
+      <div className='row'>
+        <div className='why'>
+          <div className='imagewhy'>
+            <img src='./../../assets/images/why.PNG'></img>
+          </div>
+          <div className='textwhy'>
+            <h1><b>Pourquoi nous ?</b></h1> <br />
+            <p>SMART LOGGER accélerateur de la  transformation digitale</p>
+            <p>dans le secteur agricole, environnementale et industriel.</p>
+            <br />
+            <ul>
+              <li>⚬ La prise de décision</li>
+              <li>⚬ Gestion de commande</li>
+              <li>⚬ Traçabilité</li>
+              <li>⚬ Meilleur gestion</li>
+              <li>⚬ Outils de prédiction d'erreurs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* Notre exptise */}
+      <div className='container'>
+        <div className='row'>
+          <div className='expertisetitle'>
+            <p><b><h1>Notre expertise</h1></b></p>
+          </div>
+          <div className='cardscontainer'>
+            <div className='cards1'>
+              <img src=''></img>
+              <br />
+              <section>Conception éléctronique</section>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Join our team */}
+      <div>
 
-    </div>
+      </div>
+      {/*Nos Références*/}
+      <div>
+
+      </div>
+      {/* Footer */}
+      <div>
+
+      </div>
+
+
+    </div >
   )
 }
 
