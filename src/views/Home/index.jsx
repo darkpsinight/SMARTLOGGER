@@ -2,11 +2,11 @@ import React from 'react'
 import './home.css'
 import { AiOutlineUserSwitch } from 'react-icons/ai'
 import { HiOutlineLightBulb } from 'react-icons/hi'
-import { GiFactory, GiPodiumWinner, GiStarsStack } from 'react-icons/gi'
+import { GiBrain, GiFactory, GiPodiumWinner, GiStarsStack } from 'react-icons/gi'
 import { RiLeafLine } from 'react-icons/ri'
 import { BiBuildingHouse } from 'react-icons/bi'
 import { FiMapPin } from 'react-icons/fi'
-import { BsCpu } from 'react-icons/bs'
+import { BsCloudCheck, BsCpu } from 'react-icons/bs'
 
 
 const Home = () => {
@@ -197,9 +197,29 @@ const Home = () => {
             <h1>Notre expertise</h1>
           </div>
           <div className='cardscontainer'>
-            <div className='expertisecard1'>
-              <div className='icon'>
+            <div className='expertisecard'>
+              <div className='expertisecardinside'>
+              <div className='expertiseicon1'>
                 <BsCpu />
+              </div>
+              </div>
+              <br />
+              <div className='expertisenote'>
+                <section>Conception éléctronique</section>
+              </div>
+            </div>
+            <div className='expertisecard'>
+              <div className='expertiseicon2'>
+                <BsCloudCheck />
+              </div>
+              <br />
+              <div className='expertisenote'>
+                <section>Conception éléctronique</section>
+              </div>
+            </div>
+            <div className='expertisecard'>
+              <div className='expertiseicon3'>
+                <GiBrain />
               </div>
               <br />
               <div className='expertisenote'>
