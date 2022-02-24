@@ -8,7 +8,7 @@
 
 .button1 {
   background-color: rgb(62, 231, 231);
-  text-align: center;
+  vertical-align: middle;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-width: 1px;
@@ -133,11 +133,7 @@
 }
 
 /*4 Cards*/
-
-.about {
-  position: fixed;
-}
-
+/* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee   card1    eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
 .content {
   max-width: 2000px;
   max-height: 1000px;
@@ -151,20 +147,176 @@
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
-  .content {
-    padding-top: 300px;
-    flex-direction: column;
-  }
-}
-
-.card1 {
+.card {
   width: 100%;
   max-width: 310px;
   min-width: 200px;
   height: 500px;
   background-color: #292929;
   background-image: url(./../../../public/assets/images/4.jpg);
+  background-size: 100% 100%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icon {
+  margin: 01 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 110px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+}
+
+.material-icons.md-36 {
+  font-size: 90px;
+}
+
+.cardbutton {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 500;
+  transition: all 0.3s;
+  margin-top: 300px;
+  opacity: 0;
+}
+
+.card .cardtext {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+  margin-bottom: -110px;
+  font-family: "futura", sans-serif;
+}
+
+.card:hover {
+  opacity: 0.6;
+}
+.card:hover .icon {
+  color: rgb(20, 224, 81);
+}
+
+.card:hover .cardbutton {
+  opacity: 1;
+}
+.cardbutton:hover a {
+  color: black;
+}
+
+.card:hover .cardtext {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 40px;
+}
+
+.card:hover .p .icon {
+  background-position: -120px;
+  transition: all 0.3s ease;
+}
+
+/* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee    end card1    eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+.card2 {
+  width: 100%;
+  max-width: 310px;
+  min-width: 200px;
+  height: 500px;
+  background-color: #292929;
+  background-image: url(./../../../public/assets/images/1.jpg);
+  background-size: 100% 100%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.material-icons.md-36 {
+  font-size: 90px;
+}
+
+.card2 .cardtext {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+  margin-bottom: -110px;
+  font-family: "futura", sans-serif;
+}
+
+.card2:hover {
+  opacity: 0.6;
+}
+.card2:hover .icon {
+  color: rgb(255, 255, 255);
+}
+
+.card2:hover .cardbutton {
+  opacity: 1;
+}
+.cardbutton:hover a {
+  color: black;
+}
+
+.card2:hover .cardtext {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 40px;
+}
+
+.card2:hover .p .icon {
+  background-position: -120px;
+  transition: all 0.3s ease;
+}
+
+.card3 {
+  width: 100%;
+  max-width: 310px;
+  min-width: 200px;
+  height: 500px;
+  background-color: #292929;
+  background-image: url(./../../../public/assets/images/3.jpg);
   background-size: 100% 100%;
   margin: 10px;
   border-radius: 10px;
@@ -197,161 +349,47 @@
 }
 
 .material-icons.md-36 {
-  font-size: 100px;
+  font-size: 90px;
 }
 
-.card1 .text {
+.card3 .cardtext {
   width: 80%;
   margin: 0 auto;
   font-size: 13px;
   text-align: center;
   margin-top: 20px;
-  color: white;
   font-weight: 200;
   letter-spacing: 2px;
   opacity: 0;
   max-height: 0;
   transition: all 0.3s ease;
+  margin-bottom: -110px;
+  font-family: "futura", sans-serif;
 }
 
-.card1 .button {
-  /*LE BOUTONNNNNNN                <button className='buttoncard'>Découvrir</button>           */
+.card3:hover {
+  opacity: 0.6;
 }
-
-.card1:hover .text {
-  transition: all 0.3s ease;
-  opacity: 1;
-  max-height: 40px;
-}
-
-.card1:hover .icon {
-  background-position: -120px;
-  transition: all 0.3s ease;
-}
-
-.card1:hover .icon i {
-  background: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
-}
-
-.card2 {
-  width: 100%;
-  max-width: 310px;
-  min-width: 200px;
-  height: 500px;
-  background-color: #292929;
-  background-image: url(./../../../public/assets/images/1.jpg);
-  background-size: 100% 100%;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  border: 2px solid rgba(7, 7, 7, 0.12);
-  font-size: 16px;
-  transition: all 0.3s ease;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.card2 .text {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 13px;
-  text-align: center;
-  margin-top: 20px;
-  color: white;
-  font-weight: 200;
-  letter-spacing: 2px;
-  opacity: 0;
-  max-height: 0;
-  transition: all 0.3s ease;
-}
-
-.card2 .button {
-  /*LE BOUTONNNNNNN                <button className='buttoncard'>Découvrir</button>           */
-}
-
-.card2:hover .text {
-  transition: all 0.3s ease;
-  opacity: 1;
-  max-height: 40px;
-}
-
-.card2:hover .icon {
-  background-position: -120px;
-  transition: all 0.3s ease;
-}
-
-.card2:hover .icon i {
-  background: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
-}
-
-.card3 {
-  width: 100%;
-  max-width: 310px;
-  min-width: 200px;
-  height: 500px;
-  background-color: #292929;
-  background-image: url(./../../../public/assets/images/3.jpg);
-  background-size: 100% 100%;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
-  border: 2px solid rgba(7, 7, 7, 0.12);
-  font-size: 16px;
-  transition: all 0.3s ease;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.card3 .text {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 13px;
-  text-align: center;
-  margin-top: 20px;
-  color: white;
-  font-weight: 200;
-  letter-spacing: 2px;
-  opacity: 0;
-  max-height: 0;
-  transition: all 0.3s ease;
-}
-
-.card3 .button {
-  /*LE BOUTONNNNNNN                <button className='buttoncard'>Découvrir</button>           */
-}
-
-.card3:hover .text {
-  transition: all 0.3s ease;
-  opacity: 1;
-  max-height: 40px;
-}
-
 .card3:hover .icon {
-  background-position: -120px;
-  transition: all 0.3s ease;
+  color: rgb(32, 87, 240);
 }
 
-.card3:hover .icon i {
-  background: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.card3:hover .cardbutton {
   opacity: 1;
+}
+.cardbutton:hover a {
+  color: black;
+}
+
+.card3:hover .cardtext {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 40px;
+}
+
+.card3:hover .p .icon {
+  background-position: -120px;
+  transition: all 0.3s ease;
 }
 
 .card4 {
@@ -377,40 +415,63 @@
   transition: all 0.3s ease;
 }
 
-.card4 .text {
+.icon {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 110px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+}
+
+.material-icons.md-36 {
+  font-size: 90px;
+}
+
+.card4 .cardtext {
   width: 80%;
   margin: 0 auto;
   font-size: 13px;
   text-align: center;
   margin-top: 20px;
-  color: white;
   font-weight: 200;
   letter-spacing: 2px;
   opacity: 0;
   max-height: 0;
   transition: all 0.3s ease;
+  margin-bottom: -110px;
+  font-family: "futura", sans-serif;
 }
 
-.card4 .button {
-  /*LE BOUTONNNNNNN                <button className='buttoncard'>Découvrir</button>           */
+.card4:hover {
+  opacity: 0.6;
+}
+.card4:hover .icon {
+  color: rgb(88, 89, 90);
 }
 
-.card4:hover .text {
+.card4:hover .cardbutton {
+  opacity: 1;
+}
+.cardbutton:hover a {
+  color: black;
+}
+
+.card4:hover .cardtext {
   transition: all 0.3s ease;
   opacity: 1;
   max-height: 40px;
 }
 
-.card4:hover .icon {
+.card4:hover .p .icon {
   background-position: -120px;
   transition: all 0.3s ease;
-}
-
-.card4:hover .icon i {
-  background: white;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
 }
 
 /*Pourquoi nous?*/
@@ -420,6 +481,7 @@
   height: 520px;
   display: flex;
   align-items: center;
+  margin-top: 50px;
 }
 
 .imagewhy {
@@ -442,26 +504,34 @@
   color: lightgray;
 }
 
-.cardscontainer{
+.cardscontainer {
   margin-top: 50px;
 }
 
-.cardscontainer p{
+.cardscontainer p {
   margin-top: 50px;
 }
 
-.expertisetitle{
-  display: flex;
+.expertisetitle h1 {
   text-align: center;
-  color: red;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "futura", sans-serif;
+  margin-top: 56.7px;
 }
 
-.cards1 {
-  -webkit-box-shadow: 5px 5px 15px 5px #eeeeee;
+.expertisecard1 {
+  -webkit-box-shadow: 15px 15px 15px 15px #eeeeee;
   box-shadow: 5px 5px 15px 5px #eeeeee;
   background: #ffffff;
   border-radius: 7%;
   width: 30%;
   height: 350px;
-  background-color: #292929;
+  background-color: #ffffff;
+}
+
+.expertisecard1:hover {
+  background-color: #f7f7f7b7;
 }

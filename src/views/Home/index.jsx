@@ -6,6 +6,7 @@ import { GiFactory, GiPodiumWinner, GiStarsStack } from 'react-icons/gi'
 import { RiLeafLine } from 'react-icons/ri'
 import { BiBuildingHouse } from 'react-icons/bi'
 import { FiMapPin } from 'react-icons/fi'
+import { BsCpu } from 'react-icons/bs'
 
 
 const Home = () => {
@@ -84,32 +85,85 @@ const Home = () => {
           <h6>l'agriculture, et l'environnement.</h6>
         </div>
       </div>
-      {/* Les 4 images */}
+      {/* Les 4 cards */}
       <div>
-        <div>
+        <div className='container'>
           <div className="content">
-            {/* card */}
-            <div className="card1">
-              <div className="icon"><i className="material-icons md-36"><RiLeafLine /></i></div>
-              <p className="text"><h4>Smart agriculture</h4><section>SMART IRRIGATION consiste à moderniser la gestion des champs irrigués.</section></p>
+            {/* card 1*/}
+            <div className="card">
+              <div className="icon">
+                <br /><br /><br /><br />
+                <i className="material-icons md-36"><RiLeafLine /></i>
+              </div>
+              <div className='cardtext'>
+                <div className='cardtitle'>
+                  <p><h4>Smart agriculture</h4></p>
+                </div>
+                <div className='cardnote'>
+                  <br />
+                  <p>SMART IRRIGATION consiste à moderniser la gestion des champs irrigués.</p>
+                </div>
+              </div>
+              <div class="cardbutton">
+                <a href="#"><b>Découvrir</b></a>
+              </div>
             </div>
             {/* end card */}
-            {/* card */}
+            {/* card 2*/}
             <div className="card2">
-              <div className="icon"><i className="material-icons md-36"><GiFactory /></i></div>
-              <p className="text"><h4>Smart industry</h4><section>L'industrie 4.0 est une réorganisation compléte du mode de production avec les outils existants et donnant une plus grande importance au réseau.</section></p>
+              <div className="icon">
+                <i className="material-icons md-36"><GiFactory /></i>
+              </div>
+              <div className='cardtext'>
+                <div className='cardtitle'>
+                  <p><h4>Smart industry</h4></p>
+                </div>
+                <div className='cardnote'>
+                  <br />
+                  <p>L'industrie 4.0 est une réorganisation compléte du mode de production avec les outils existants et donnant une plus grande importance au réseau.</p>
+                </div>
+              </div>
+              <div class="cardbutton">
+                <a href="#"><b>Découvrir</b></a>
+              </div>
             </div>
             {/* end card */}
-            {/* card */}
+            {/* card 3*/}
             <div className="card3">
-              <div className="icon"><i className="material-icons md-36"><BiBuildingHouse /></i></div>
-              <p className="text"><h4>SMART CITY</h4><section>Smart COLLECT</section>convertir vos déchets ménagers en source de revenu !</p>
+              <div className="icon">
+                <i className="material-icons md-36"><BiBuildingHouse /></i>
+              </div>
+              <div className='cardtext'>
+                <div className='cardtitle'>
+                  <p><h4>SMART CITY</h4></p>
+                </div>
+                <div className='cardnote'>
+                  <br />
+                  <p>convertir vos déchets ménagers en source de revenu !</p>
+                </div>
+              </div>
+              <div class="cardbutton">
+                <a href="#"><b>Découvrir</b></a>
+              </div>
             </div>
             {/* end card */}
-            {/* card */}
+            {/* card 4*/}
             <div className="card4">
-              <div className="icon"><i className="material-icons md-36"><FiMapPin /></i></div>
-              <p className="text">Vide</p>
+              <div className="icon">
+                <i className="material-icons md-36"><FiMapPin /></i>
+              </div>
+              <div className='cardtext'>
+                <div className='cardtitle'>
+                  <p><h4>Vide</h4></p>
+                </div>
+                <div className='cardnote'>
+                  <br />
+                  <p>Vide </p>
+                </div>
+              </div>
+              <div class="cardbutton">
+                <a href="#"><b>Découvrir</b></a>
+              </div>
             </div>
             {/* end card */}
           </div>
@@ -119,7 +173,7 @@ const Home = () => {
       <div className='row'>
         <div className='why'>
           <div className='imagewhy'>
-            <img src='./../../assets/images/why.PNG'></img>
+            <img src='./../../assets/images/why.PNG' alt=""></img>
           </div>
           <div className='textwhy'>
             <h1><b>Pourquoi nous ?</b></h1> <br />
@@ -140,13 +194,17 @@ const Home = () => {
       <div className='container'>
         <div className='row'>
           <div className='expertisetitle'>
-            <p><b><h1>Notre expertise</h1></b></p>
+            <h1>Notre expertise</h1>
           </div>
           <div className='cardscontainer'>
-            <div className='cards1'>
-              <img src=''></img>
+            <div className='expertisecard1'>
+              <div className='icon'>
+                <BsCpu />
+              </div>
               <br />
-              <section>Conception éléctronique</section>
+              <div className='expertisenote'>
+                <section>Conception éléctronique</section>
+              </div>
             </div>
           </div>
         </div>
