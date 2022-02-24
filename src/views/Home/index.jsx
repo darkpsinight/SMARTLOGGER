@@ -197,33 +197,74 @@ const Home = () => {
             <h1>Notre expertise</h1>
           </div>
           <div className='cardscontainer'>
-            <div className='expertisecard'>
-              <div className='expertisecardinside'>
-              <div className='expertiseicon1'>
-                <BsCpu />
+            <div className='cardscolumns1'>
+              <div className='expertisecard'>
+                <div className='expertisecardinside'>
+                  <div className='expertiseicon1'>
+                    <BsCpu />
+                  </div>
+                </div>
+                <br />
+                <div className='expertisenote'>
+                  <section>Conception éléctronique</section>
+                </div>
               </div>
+              <div className='expertisecard'>
+                <div className='expertisecardinside'>
+                  <div className='expertiseicon2'>
+                    <BsCloudCheck />
+                  </div>
+                </div>
+                <br />
+                <div className='expertisenote'>
+                  <section>Conception éléctronique</section>
+                </div>
               </div>
-              <br />
-              <div className='expertisenote'>
-                <section>Conception éléctronique</section>
+              <div className='expertisecard'>
+                <div className='expertisecardinside'>
+                  <div className='expertiseicon3'>
+                    <GiBrain />
+                  </div>
+                  <br />
+                  <div className='expertisenote'>
+                    <section>Conception éléctronique</section>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className='expertisecard'>
-              <div className='expertiseicon2'>
-                <BsCloudCheck />
+            <div className='cardscolumns2'>
+              <div className='expertisecard'>
+                <div className='expertisecardinside'>
+                  <div className='expertiseicon1'>
+                    <BsCpu />
+                  </div>
+                </div>
+                <br />
+                <div className='expertisenote'>
+                  <section>Conception éléctronique</section>
+                </div>
               </div>
-              <br />
-              <div className='expertisenote'>
-                <section>Conception éléctronique</section>
+              <div className='expertisecard'>
+                <div className='expertisecardinside'>
+                  <div className='expertiseicon2'>
+                    <BsCloudCheck />
+                  </div>
+                </div>
+                <br />
+                <div className='expertisenote'>
+                  <section>Conception éléctronique</section>
+                </div>
               </div>
-            </div>
-            <div className='expertisecard'>
-              <div className='expertiseicon3'>
-                <GiBrain />
-              </div>
-              <br />
-              <div className='expertisenote'>
-                <section>Conception éléctronique</section>
+              <div className='expertisecard'>
+                <div className='expertisecardinside'>
+                  <div className='expertiseicon3'>
+                    <GiBrain />
+                  </div>
+                  <br />
+                  <div className='expertisenote'>
+                    <section>Conception éléctronique</section>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
