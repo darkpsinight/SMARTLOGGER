@@ -12,7 +12,6 @@ import { BsCloudCheck, BsCpu } from 'react-icons/bs'
 const Home = () => {
   return (
     <div className='background-text'>
-
       <div>
         <section class="heading-page header-text" id="top">
           <div class="container">
@@ -88,7 +87,7 @@ const Home = () => {
       {/* Les 4 cards */}
       <div>
         <div className='container'>
-          <div className="content">
+          <div className="content1">
             {/* card 1*/}
             <div className="card">
               <div className="icon">
@@ -139,7 +138,7 @@ const Home = () => {
                 </div>
                 <div className='cardnote'>
                   <br />
-                  <p>convertir vos déchets ménagers en source de revenu !</p>
+                  <p>Convertir vos déchets ménagers en source de revenu !</p>
                 </div>
               </div>
               <div class="cardbutton">
@@ -154,11 +153,11 @@ const Home = () => {
               </div>
               <div className='cardtext'>
                 <div className='cardtitle'>
-                  <p><h4>Vide</h4></p>
+                  <p><h4>Smart<br />tracking</h4></p>
                 </div>
                 <div className='cardnote'>
                   <br />
-                  <p>Vide </p>
+                  <p>Smart tracking permet<br />aux entreprises de suivre<br />et de gérer les actifs qui<br />aliment toute entreprise.</p>
                 </div>
               </div>
               <div class="cardbutton">
@@ -176,7 +175,7 @@ const Home = () => {
             <img src='./../../assets/images/why.PNG' alt=""></img>
           </div>
           <div className='textwhy'>
-            <h1><b>Pourquoi nous ?</b></h1> <br />
+            <h1>Pourquoi nous ?</h1> <br />
             <p>SMART LOGGER accélerateur de la  transformation digitale</p>
             <p>dans le secteur agricole, environnementale et industriel.</p>
             <br />
@@ -191,81 +190,134 @@ const Home = () => {
         </div>
       </div>
       {/* Notre exptise */}
-      <div className='container'>
-        <div className='row'>
-          <div className='expertisetitle'>
-            <h1>Notre expertise</h1>
+      {/* Les 6 cards */}
+      <div>
+        <div className='container'>
+          <div className='row'>
+            <div className='expertisetitle'>
+              <h1>Notre expertise</h1>
+            </div>
           </div>
-          <div className='cardscontainer'>
+          <div className="content2">
             <div className='cardscolumns1'>
-              <div className='expertisecard'>
+              {/* card 1*/}
+              <div className="expertisecard">
                 <div className='expertisecardinside'>
-                  <div className='expertiseicon1'>
-                    <BsCpu />
+                  <div className='iconbox'>
+                    <div className="expertiseicon1">
+                      <br /><br /><br /><br />
+                      <i className="material-icons md-36"><BsCpu /></i>
+                    </div>
+                  </div>
+                  <div className='cardtext'>
+                    <div className='expertisecardtitle'>
+                      <p><h4>Conception <br />éléctronique</h4></p>
+                    </div>
                   </div>
                 </div>
-                <br />
-                <div className='expertisenote'>
-                  <section>Conception éléctronique</section>
+                <div class='cardbutton'>
+                  <a href="#"><b>Découvrir</b></a>
                 </div>
               </div>
-              <div className='expertisecard'>
-                <div className='expertisecardinside'>
-                  <div className='expertiseicon2'>
-                    <BsCloudCheck />
+              {/* end card */}
+              {/* card 2*/}
+              <div className="card2">
+                <div className="icon">
+                  <i className="material-icons md-36"><BsCloudCheck /></i>
+                </div>
+                <div className='cardtext'>
+                  <div className='cardtitle'>
+                    <p><h4>Smart industry</h4></p>
+                  </div>
+                  <div className='cardnote'>
+                    <br />
+                    <p>L'industrie 4.0 est une réorganisation compléte du mode de production avec les outils existants et donnant une plus grande importance au réseau.</p>
                   </div>
                 </div>
-                <br />
-                <div className='expertisenote'>
-                  <section>Conception éléctronique</section>
-                </div>
-              </div>
-              <div className='expertisecard'>
-                <div className='expertisecardinside'>
-                  <div className='expertiseicon3'>
-                    <GiBrain />
-                  </div>
-                  <br />
-                  <div className='expertisenote'>
-                    <section>Conception éléctronique</section>
-                  </div>
+                <div class="cardbutton">
+                  <a href="#"><b>Découvrir</b></a>
                 </div>
               </div>
+              {/* end card */}
+              {/* card 3*/}
+              <div className="card3">
+                <div className="icon">
+                  <i className="material-icons md-36"><GiBrain /></i>
+                </div>
+                <div className='cardtext'>
+                  <div className='cardtitle'>
+                    <p><h4>SMART CITY</h4></p>
+                  </div>
+                  <div className='cardnote'>
+                    <br />
+                    <p>convertir vos déchets ménagers en source de revenu !</p>
+                  </div>
+                </div>
+                <div class="cardbutton">
+                  <a href="#"><b>Découvrir</b></a>
+                </div>
+              </div>
+              {/* end card */}
             </div>
             <div className='cardscolumns2'>
-              <div className='expertisecard'>
-                <div className='expertisecardinside'>
-                  <div className='expertiseicon1'>
-                    <BsCpu />
+              {/* card 4*/}
+              <div className="card">
+                <div className="icon">
+                  <br /><br /><br /><br />
+                  <i className="material-icons md-36"><RiLeafLine /></i>
+                </div>
+                <div className='cardtext'>
+                  <div className='cardtitle'>
+                    <p><h4>Smart agriculture</h4></p>
+                  </div>
+                  <div className='cardnote'>
+                    <br />
+                    <p>SMART IRRIGATION consiste à moderniser la gestion des champs irrigués.</p>
                   </div>
                 </div>
-                <br />
-                <div className='expertisenote'>
-                  <section>Conception éléctronique</section>
+                <div class="cardbutton">
+                  <a href="#"><b>Découvrir</b></a>
                 </div>
               </div>
-              <div className='expertisecard'>
-                <div className='expertisecardinside'>
-                  <div className='expertiseicon2'>
-                    <BsCloudCheck />
+              {/* end card */}
+              {/* card 5*/}
+              <div className="card2">
+                <div className="icon">
+                  <i className="material-icons md-36"><GiFactory /></i>
+                </div>
+                <div className='cardtext'>
+                  <div className='cardtitle'>
+                    <p><h4>Smart industry</h4></p>
+                  </div>
+                  <div className='cardnote'>
+                    <br />
+                    <p>L'industrie 4.0 est une réorganisation compléte du mode de production avec les outils existants et donnant une plus grande importance au réseau.</p>
                   </div>
                 </div>
-                <br />
-                <div className='expertisenote'>
-                  <section>Conception éléctronique</section>
-                </div>
-              </div>
-              <div className='expertisecard'>
-                <div className='expertisecardinside'>
-                  <div className='expertiseicon3'>
-                    <GiBrain />
-                  </div>
-                  <br />
-                  <div className='expertisenote'>
-                    <section>Conception éléctronique</section>
-                  </div>
+                <div class="cardbutton">
+                  <a href="#"><b>Découvrir</b></a>
                 </div>
               </div>
+              {/* end card */}
+              {/* card 6*/}
+              <div className="card3">
+                <div className="icon">
+                  <i className="material-icons md-36"><BiBuildingHouse /></i>
+                </div>
+                <div className='cardtext'>
+                  <div className='cardtitle'>
+                    <p><h4>SMART CITY</h4></p>
+                  </div>
+                  <div className='cardnote'>
+                    <br />
+                    <p>convertir vos déchets ménagers en source de revenu !</p>
+                  </div>
+                </div>
+                <div class="cardbutton">
+                  <a href="#"><b>Découvrir</b></a>
+                </div>
+              </div>
+              {/* end card */}
             </div>
           </div>
         </div>

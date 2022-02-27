@@ -1,5 +1,6 @@
 #top {
   background-image: url(./../../../public/assets/images/10.jpg);
+  background-size: 100% 100%;
 }
 
 .button {
@@ -90,10 +91,34 @@
   font-size: 100px;
 }
 
+.engagement {
+  margin-top: -70px;
+  padding: 70px;
+}
+
+.engagement:hover {
+  background-color: #94dcde;
+  border-radius: 5%;
+  padding: 70px;
+  color: #ffffff;
+}
+
 .engagement p {
   display: flex;
   justify-content: center;
   font-weight: bold;
+}
+
+.innovation {
+  margin-top: -70px;
+  padding: 70px;
+}
+
+.innovation:hover {
+  background-color: #94dcde;
+  border-radius: 5%;
+  padding: 70px;
+  color: #ffffff;
 }
 
 .innovation p {
@@ -102,10 +127,34 @@
   font-weight: bold;
 }
 
+.exellence {
+  margin-top: -70px;
+  padding: 70px;
+}
+
+.exellence:hover {
+  background-color: #94dcde;
+  border-radius: 5%;
+  padding: 70px;
+  color: #ffffff;
+}
+
 .exellence p {
   display: flex;
   justify-content: center;
   font-weight: bold;
+}
+
+.satisfaction {
+  margin-top: -70px;
+  padding: 70px;
+}
+
+.satisfaction:hover {
+  background-color: #94dcde;
+  border-radius: 5%;
+  padding: 70px;
+  color: #ffffff;
 }
 
 .satisfaction p {
@@ -134,7 +183,7 @@
 
 /*4 Cards*/
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee   card1    eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee */
-.content {
+.content1 {
   max-width: 2000px;
   max-height: 1000px;
   width: 100%;
@@ -166,16 +215,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .icon {
   margin: 01 auto;
-  width: 100%;
-  height: 80px;
   max-width: 110px;
   border-radius: 100%;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,6 +253,11 @@
   opacity: 0;
 }
 
+.cardtitle {
+  margin-top: 60px;
+  color: white;
+}
+
 .card .cardtext {
   width: 80%;
   margin: 0 auto;
@@ -218,17 +274,24 @@
 }
 
 .card:hover {
-  opacity: 0.6;
+  background-image: url(./../../../public/assets/images/4_black.png);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
+
 .card:hover .icon {
   color: rgb(20, 224, 81);
+  transform: translate(0, -225%);
 }
 
 .card:hover .cardbutton {
   opacity: 1;
+  color: #292929;
 }
+
 .cardbutton:hover a {
   color: black;
+  cursor: pointer;
 }
 
 .card:hover .cardtext {
@@ -262,7 +325,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -286,10 +348,13 @@
 }
 
 .card2:hover {
-  opacity: 0.6;
+  background-image: url(./../../../public/assets/images/1_black.png);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .card2:hover .icon {
   color: rgb(255, 255, 255);
+  transform: translate(0, -210%);
 }
 
 .card2:hover .cardbutton {
@@ -303,6 +368,7 @@
   transition: all 0.3s ease;
   opacity: 1;
   max-height: 40px;
+  color: white;
 }
 
 .card2:hover .p .icon {
@@ -329,7 +395,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -368,10 +433,14 @@
 }
 
 .card3:hover {
-  opacity: 0.6;
+  background-image: url(./../../../public/assets/images/3_black.png);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
+
 .card3:hover .icon {
   color: rgb(32, 87, 240);
+  transform: translate(0, -210%);
 }
 
 .card3:hover .cardbutton {
@@ -385,6 +454,7 @@
   transition: all 0.3s ease;
   opacity: 1;
   max-height: 40px;
+  color: white;
 }
 
 .card3:hover .p .icon {
@@ -411,7 +481,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 
@@ -450,10 +519,13 @@
 }
 
 .card4:hover {
-  opacity: 0.6;
+  background-image: url(./../../../public/assets/images/2_black.png);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .card4:hover .icon {
   color: rgb(88, 89, 90);
+  transform: translate(0, -210%);
 }
 
 .card4:hover .cardbutton {
@@ -467,6 +539,7 @@
   transition: all 0.3s ease;
   opacity: 1;
   max-height: 40px;
+  color: white;
 }
 
 .card4:hover .p .icon {
@@ -513,7 +586,8 @@
   flex-wrap: wrap;
 }
 
-.cardscontainer p {
+.content2 {
+  margin-left: 150px;
   margin-top: 50px;
 }
 
@@ -527,6 +601,122 @@
   margin-top: 56.7px;
 }
 
+.cardscolumns1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardscolumns2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.expertisecard {
+  width: 300px;
+  height: 330px;
+  max-width: 310px;
+  min-width: 200px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+  border: 2px solid rgba(7, 7, 7, 0.12);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 50px;
+}
+
+.expertisecardtitle {
+  margin-top: 50px;
+}
+
+.expertisecard:hover {
+  background-color: #f7f8ff;
+}
+
+.expertisecard:hover .expertisecardtitle {
+  margin-top: 0px;
+}
+
+.expertisecard:hover .cardbutton {
+  opacity: 1;
+}
+
+.expertiseicon1 {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 110px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #586ce7;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  font-size: 500px;
+}
+
+.iconbox {
+  background-color: #f7f8ff;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.expertisecardinside {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.expertisecardbutton {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  font-weight: 500;
+  transition: all 0.3s;
+  margin-top: 300px;
+  opacity: 1;
+}
+
+.card:hover .icon {
+  color: rgb(20, 224, 81);
+}
+
+.card:hover .cardbutton {
+  opacity: 1;
+}
+
+.cardbutton:hover a {
+  color: black;
+}
+
+.card:hover .cardtext {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-height: 40px;
+  color: white;
+}
+
+.card:hover .p .icon {
+  background-position: -120px;
+  transition: all 0.3s ease;
+}
+/* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee     end expertise cards     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
+/* 
 .expertisecard {
   -webkit-box-shadow: 15px 15px 15px 15px #eeeeee;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -544,17 +734,6 @@
   cursor: pointer;
 }
 
-.cardscolumns1{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.cardscolumns2{
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 .expertiseicon1 {
   margin: 0 auto;
@@ -661,4 +840,4 @@
 .expertisecardinside{
   background-color: #757575;
   
-}
+} */
