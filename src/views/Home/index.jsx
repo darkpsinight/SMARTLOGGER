@@ -213,10 +213,13 @@ const Home = () => {
                     <div className='expertisecardtitle'>
                       <p><h4>Conception <br />éléctronique</h4></p>
                     </div>
+                    <div className='expertisecardnote1'>
+                      <p>Nous réalisons toute la phase de<br />conception électronique d'un produit<br />ou d'un systéme électronique<br />embarqué: étude de faisabilité et élaborationdes schémas<br />électroniques...etc</p>
+                    </div>
                   </div>
-                </div>
-                <div class='cardbutton'>
+                <div class='expertisecardbutton1'>
                   <a href="#"><b>Découvrir</b></a>
+                </div>
                 </div>
               </div>
               {/* end card */}
