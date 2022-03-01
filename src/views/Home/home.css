@@ -224,12 +224,10 @@
   margin: 01 auto;
   max-width: 110px;
   border-radius: 100%;
-
   width: 100%;
   height: 100%;
   position: absolute;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,7 +276,6 @@
 
 .card:hover {
   background-image: url(./../../../public/assets/images/4_black.png);
-  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
@@ -352,7 +349,6 @@
 
 .card2:hover {
   background-image: url(./../../../public/assets/images/1_black.png);
-  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .card2:hover .icon {
@@ -437,7 +433,6 @@
 
 .card3:hover {
   background-image: url(./../../../public/assets/images/3_black.png);
-  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
@@ -523,7 +518,6 @@
 
 .card4:hover {
   background-image: url(./../../../public/assets/images/2_black.png);
-  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .card4:hover .icon {
@@ -632,7 +626,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 50px;
 }
@@ -643,6 +636,7 @@
 
 .expertisecard:hover {
   background-color: #f7f8ff;
+  cursor: default;
 }
 
 .expertisecard:hover .expertisecardinside {
@@ -673,7 +667,85 @@
   background-size: 200px;
   font-size: 500px;
 }
+.expertiseicon2 {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 110px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1a9e4;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  font-size: 500px;
+}
 
+.expertiseicon3 {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 110px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #68c963;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  font-size: 500px;
+}
+
+.expertiseicon4 {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 110px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #586ce7;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  font-size: 500px;
+}
+
+.expertiseicon5 {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 110px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #586ce7;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  font-size: 500px;
+}
+
+.expertiseicon6 {
+  margin: 0 auto;
+  width: 100%;
+  height: 80px;
+  max-width: 110px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #586ce7;
+  transition: all 0.8s ease;
+  background-position: 0px;
+  background-size: 200px;
+  font-size: 500px;
+}
 .iconbox {
   background-color: #f7f8ff;
   height: 100px;
@@ -717,128 +789,150 @@
 }
 
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee     end expertise cards     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
-/* 
-.expertisecard {
-  -webkit-box-shadow: 15px 15px 15px 15px #eeeeee;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background: #ffffff;
-  border-radius: 3%;
-  width: 300px;
-  height: 330px;
-  background-color: #ffffff;
-  justify-content: center;
-  margin: 30px;
+
+/* join our team */
+
+.jointeam {
+  background-image: url(../../../public//assets/images/11_black.png);
+  width: 1520px;
+  height: 425px;
+  margin-top: 60px;
 }
 
-.expertisecard:hover {
-  background-color: #f3f3f3b7;
-  cursor: pointer;
-}
-
-
-.expertiseicon1 {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  max-width: 110px;
-  border-radius: 100%;
+.joininside {
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  color: rgb(4, 63, 255);
-  transition: all 0.8s ease;
-  background-position: 0px;
-  background-size: 200px;
-  font-size: 500px;
-  margin-top: 70px;
+  padding-top: 80px;
 }
 
-.expertiseicon2 {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  max-width: 110px;
-  border-radius: 100%;
+.jointitle {
+  color: white;
+}
+.joinnote {
+  color: white;
+  padding-top: 60px;
+}
+
+.joinbutton a {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(226, 4, 255);
-  transition: all 0.8s ease;
-  background-position: 0px;
-  background-size: 200px;
-  font-size: 500px;
-  margin-top: 70px;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: #5cc3c6;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  transition: all 0.3s;
+  margin-top: 80px;
 }
 
-.expertiseicon3 {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  max-width: 110px;
-  border-radius: 100%;
+/*Slideshow*/
+
+.references {
+  height: 300px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 209, 0);
-  transition: all 0.8s ease;
-  background-position: 0px;
-  background-size: 200px;
-  font-size: 500px;
-  margin-top: 70px;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 100px;
 }
 
-.expertiseicon4 {
+.slidecontainer {
   margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  max-width: 110px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(4, 63, 255);
-  transition: all 0.8s ease;
-  background-position: 0px;
-  background-size: 200px;
-  font-size: 500px;
-  margin-top: 70px;
+  padding: 0px 40px 40px 40px;
+  width: 1000px;
+}
+.slidecontainer h2 {
+  background: #5f9ea0;
+  color: #fff;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: #000;
 }
 
-.expertiseicon5 {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  max-width: 110px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(226, 4, 255);
-  transition: all 0.8s ease;
-  background-position: 0px;
-  background-size: 200px;
-  font-size: 500px;
-  margin-top: 70px;
+.wsalogo {
+  margin-top: 30px;
 }
 
-.expertiseicon6 {
-  margin: 0 auto;
-  width: 100%;
-  height: 80px;
-  max-width: 110px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 209, 0);
-  transition: all 0.8s ease;
-  background-position: 0px;
-  background-size: 200px;
-  font-size: 500px;
-  margin-top: 70px;
+.Germanlogo {
+  margin-top: 50px;
 }
 
-.expertisecardinside{
-  background-color: #757575;
-  
-} */
+/* Footer */
+
+.about {
+  background-color: #000;
+  width: 100%;
+  height: 310px;
+}
+
+.aboutup {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-height: 70%;
+}
+
+.linksbox{
+  display: inline-block;
+  flex-direction: row;
+}
+
+.aboutdown {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-height: 30%;
+}
+
+.solutions{
+  display: flex;
+  flex-direction: column;
+  background-color: #5cc3c6;
+  max-width: 150px;
+  margin-top: 50px;
+}
+
+.produits{
+  display: flex;
+  flex-direction: column;
+  background-color: #5cc3c6;
+  max-width: 150px;
+  margin-top: 50px;
+}
+
+.espace{
+  display: flex;
+  flex-direction: column;
+  background-color: #5cc3c6;
+  max-width: 150px;
+  margin-top: 50px;
+}
+
+.apropos{
+  display: flex;
+  flex-direction: column;
+  background-color: #5cc3c6;
+  max-width: 150px;
+  margin-top: 50px;
+}
+
+.nous_contacter{
+  display: flex;
+  flex-direction: column;
+  background-color: #5cc685;
+  max-width: 150px;
+  margin-top: 50px;
+}

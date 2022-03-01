@@ -1,13 +1,24 @@
 import React from 'react'
 import './home.css'
-import { AiOutlineUserSwitch } from 'react-icons/ai'
-import { HiOutlineLightBulb } from 'react-icons/hi'
-import { GiBrain, GiFactory, GiPodiumWinner, GiStarsStack } from 'react-icons/gi'
-import { RiLeafLine } from 'react-icons/ri'
-import { BiBuildingHouse } from 'react-icons/bi'
-import { FiMapPin } from 'react-icons/fi'
-import { BsCloudCheck, BsCpu } from 'react-icons/bs'
+import Slider from 'react-slick';
 
+import { AiOutlineInstagram, AiOutlineUserSwitch } from 'react-icons/ai'
+import { HiOutlineLightBulb } from 'react-icons/hi'
+import { GiBrain, GiFactory, GiPodiumWinner, GiStarsStack, GiPencilBrush } from 'react-icons/gi'
+import { RiLeafLine } from 'react-icons/ri'
+import { BiBuildingHouse, BiCodeBlock } from 'react-icons/bi'
+import { FiFacebook, FiMapPin } from 'react-icons/fi'
+import { BsCloudCheck, BsCpu } from 'react-icons/bs'
+import { ImLinkedin2, ImMobile } from 'react-icons/im'
+
+/* Slide settings */
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 6,
+  slidesToScroll: 2
+};
 
 const Home = () => {
   return (
@@ -217,107 +228,126 @@ const Home = () => {
                       <p>Nous réalisons toute la phase de<br />conception électronique d'un produit<br />ou d'un systéme électronique<br />embarqué: étude de faisabilité et élaborationdes schémas<br />électroniques...etc</p>
                     </div>
                   </div>
-                <div class='expertisecardbutton1'>
-                  <a href="#"><b>Découvrir</b></a>
-                </div>
+                  <div class='expertisecardbutton1'>
+                    <a href="#"><b>Découvrir</b></a>
+                  </div>
                 </div>
               </div>
               {/* end card */}
               {/* card 2*/}
-              <div className="card2">
-                <div className="icon">
-                  <i className="material-icons md-36"><BsCloudCheck /></i>
-                </div>
-                <div className='cardtext'>
-                  <div className='cardtitle'>
-                    <p><h4>Smart industry</h4></p>
+              <div className="expertisecard">
+                <div className='expertisecardinside'>
+                  <div className='iconbox'>
+                    <div className="expertiseicon2">
+                      <br /><br /><br /><br />
+                      <i className="material-icons md-36"><BsCloudCheck /></i>
+                    </div>
                   </div>
-                  <div className='cardnote'>
-                    <br />
-                    <p>L'industrie 4.0 est une réorganisation compléte du mode de production avec les outils existants et donnant une plus grande importance au réseau.</p>
+                  <div className='cardtext'>
+                    <div className='expertisecardtitle'>
+                      <p><h4>Internet des<br />objets</h4></p>
+                    </div>
+                    <div className='expertisecardnote1'>
+                      <p>représente un ensemble de services de<br />bout en bout dans lesquels les<br />entreprises passent des contrats avec<br />des fournisseurs externes pour<br /> concevoir, construire, installer et<br />exploiter des solutions IoT.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="cardbutton">
-                  <a href="#"><b>Découvrir</b></a>
+                  <div class='expertisecardbutton1'>
+                    <a href="#"><b>Découvrir</b></a>
+                  </div>
                 </div>
               </div>
               {/* end card */}
               {/* card 3*/}
-              <div className="card3">
-                <div className="icon">
-                  <i className="material-icons md-36"><GiBrain /></i>
-                </div>
-                <div className='cardtext'>
-                  <div className='cardtitle'>
-                    <p><h4>SMART CITY</h4></p>
+              <div className="expertisecard">
+                <div className='expertisecardinside'>
+                  <div className='iconbox'>
+                    <div className="expertiseicon3">
+                      <br /><br /><br /><br />
+                      <i className="material-icons md-36"><GiBrain /></i>
+                    </div>
                   </div>
-                  <div className='cardnote'>
-                    <br />
-                    <p>convertir vos déchets ménagers en source de revenu !</p>
+                  <div className='cardtext'>
+                    <div className='expertisecardtitle'>
+                      <p><h4>Intellegence <br />artificielle</h4></p>
+                    </div>
+                    <div className='expertisecardnote1'>
+                      <p>Nous fournissons des solutions et<br />des services puissants basés sur l'IA<br />pour aider les entreprises à innover<br />et à renforcer leur avantage<br />concurrentiel.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="cardbutton">
-                  <a href="#"><b>Découvrir</b></a>
+                  <div class='expertisecardbutton1'>
+                    <a href="#"><b>Découvrir</b></a>
+                  </div>
                 </div>
               </div>
               {/* end card */}
             </div>
             <div className='cardscolumns2'>
               {/* card 4*/}
-              <div className="card">
-                <div className="icon">
-                  <br /><br /><br /><br />
-                  <i className="material-icons md-36"><RiLeafLine /></i>
-                </div>
-                <div className='cardtext'>
-                  <div className='cardtitle'>
-                    <p><h4>Smart agriculture</h4></p>
+              <div className="expertisecard">
+                <div className='expertisecardinside'>
+                  <div className='iconbox'>
+                    <div className="expertiseicon1">
+                      <br /><br /><br /><br />
+                      <i className="material-icons md-36"><BiCodeBlock /></i>
+                    </div>
                   </div>
-                  <div className='cardnote'>
-                    <br />
-                    <p>SMART IRRIGATION consiste à moderniser la gestion des champs irrigués.</p>
+                  <div className='cardtext'>
+                    <div className='expertisecardtitle'>
+                      <p><h4>Développement <br />web</h4></p>
+                    </div>
+                    <div className='expertisecardnote1'>
+                      <p>Nous proposons une large gamme de<br />services de développement Web<br /> personnalisés de bout qui<br /> répondent à divers besoins et secteurs<br /> d'activité.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="cardbutton">
-                  <a href="#"><b>Découvrir</b></a>
+                  <div class='expertisecardbutton1'>
+                    <a href="#"><b>Découvrir</b></a>
+                  </div>
                 </div>
               </div>
               {/* end card */}
               {/* card 5*/}
-              <div className="card2">
-                <div className="icon">
-                  <i className="material-icons md-36"><GiFactory /></i>
-                </div>
-                <div className='cardtext'>
-                  <div className='cardtitle'>
-                    <p><h4>Smart industry</h4></p>
+              <div className="expertisecard">
+                <div className='expertisecardinside'>
+                  <div className='iconbox'>
+                    <div className="expertiseicon2">
+                      <br /><br /><br /><br />
+                      <i className="material-icons md-36"><ImMobile /></i>
+                    </div>
                   </div>
-                  <div className='cardnote'>
-                    <br />
-                    <p>L'industrie 4.0 est une réorganisation compléte du mode de production avec les outils existants et donnant une plus grande importance au réseau.</p>
+                  <div className='cardtext'>
+                    <div className='expertisecardtitle'>
+                      <p><h4>Développement<br />mobile</h4></p>
+                    </div>
+                    <div className='expertisecardnote1'>
+                      <p>Augmentez la portée de votre entreprise<br /> et l'engagement de vos clients grace à<br />notre vaste expertise en développement<br />mobile.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="cardbutton">
-                  <a href="#"><b>Découvrir</b></a>
+                  <div class='expertisecardbutton1'>
+                    <a href="#"><b>Découvrir</b></a>
+                  </div>
                 </div>
               </div>
               {/* end card */}
               {/* card 6*/}
-              <div className="card3">
-                <div className="icon">
-                  <i className="material-icons md-36"><BiBuildingHouse /></i>
-                </div>
-                <div className='cardtext'>
-                  <div className='cardtitle'>
-                    <p><h4>SMART CITY</h4></p>
+              <div className="expertisecard">
+                <div className='expertisecardinside'>
+                  <div className='iconbox'>
+                    <div className="expertiseicon3">
+                      <br /><br /><br /><br />
+                      <i className="material-icons md-36"><GiPencilBrush /></i>
+                    </div>
                   </div>
-                  <div className='cardnote'>
-                    <br />
-                    <p>convertir vos déchets ménagers en source de revenu !</p>
+                  <div className='cardtext'>
+                    <div className='expertisecardtitle'>
+                      <p><h4>UI/UX Design</h4></p>
+                    </div>
+                    <div className='expertisecardnote1'>
+                      <p>Nous fournissons des services de<br />conception d'interface utilisateur (UI)<br />intuitive et d'experience utilisateur<br />(UX) engageante pour les applications<br />Web et mobile dans divers secteurs.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="cardbutton">
-                  <a href="#"><b>Découvrir</b></a>
+                  <div class='expertisecardbutton1'>
+                    <a href="#"><b>Découvrir</b></a>
+                  </div>
                 </div>
               </div>
               {/* end card */}
@@ -327,17 +357,134 @@ const Home = () => {
       </div>
       {/* Join our team */}
       <div>
-
+        <div className='jointeam'>
+          <div className='joininside'>
+            <div className='jointitle'>
+              <h1>Join our team!</h1>
+            </div>
+            <div className='joinnote'>
+              <p>Nous favorisons une atmosphère amicale et solidaire, où le partage des connaissances et les initiatives sont valorisés et encouragés.<br />Chaque membre de notre équipe contribue à façonner l'évolution de notre entreprise<br /></p>
+            </div>
+            <div className='joinbutton'>
+              <a href="#">Rejoindre</a>
+            </div>
+          </div>
+        </div>
       </div>
       {/*Nos Références*/}
       <div>
-
+        <div className='references'>
+          <div className='title'>
+            <h1>Nos Références</h1>
+          </div>
+          <div className='slideshow'>
+            <div className="slidecontainer">
+              <br />
+              <Slider {...settings}>
+                <div>
+                  <img src={require('.//image/Total-logo.jpg')} alt="Total logo" />
+                </div>
+                <div>
+                  <img src={require('.//image/APIA-logo.jpg')} alt="APIA logo" />
+                </div>
+                <div>
+                  <img src={require('.//image/IoT-logo.jpg')} alt="IoT logo" />
+                </div>
+                <div className='wsalogo'>
+                  <img src={require('.//image/WSA-logo.jpg')} alt="WSA logo" />
+                </div>
+                <div className='Germanlogo'>
+                  <img src={require('.//image/German-logo.jpg')} alt="German logo" />
+                </div>
+                <div>
+                  <h2>6</h2>
+                </div>
+                <div>
+                  <h2>7</h2>
+                </div>
+                <div>
+                  <h2>8</h2>
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </div>
       </div>
       {/* Footer */}
       <div>
-
+        <div className='about'>
+          <div className='aboutup'>
+            <div className='linksbox'>
+              <div className='solutions'>
+                <h5>Solutions</h5>
+                <br />
+                <a href="#">Smart control</a>
+                <a href="#">Smart monitoring</a>
+                <a href="#">Smart collect</a>
+                <a href="#">Smart irrigation</a>
+              </div>
+              <div className='produits'>
+                <h5>Produits</h5>
+                <br />
+                <a href="#">Smart agriculture</a>
+                <a href="#">Smart industry</a>
+                <a href="#">Smart city</a>
+              </div>
+              <div className='espace'>
+                <h5>Espace client</h5>
+                <br />
+                <a href="#">Smart control</a>
+                <a href="#">Smart monitoring</a>
+                <a href="#">Smart collect</a>
+                <a href="#">Smart irrigation</a>
+                <a href="#">Smart healthcare</a>
+                <a href="#">Be Smart</a>
+              </div>
+              <div className='apropos'>
+                <h5>à propos</h5>
+                <br />
+                <a href="#">About us</a>
+                <a href="#">Career</a>
+              </div>
+              <div className='nous_contacter'>
+                <h5>Nous contacter</h5>
+                <br />
+                <address>
+                  <p><b>Adress:</b>Atelier N°1 Technopole<br />de Sousse Novation City, Tunisie</p>
+                  <p><b>Téléphone:</b>+(216) 52 017 986</p>
+                  <p><b>Email:</b><a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a></p>
+                </address>
+                <div className='joinbutton'>
+                  <a href="#"><b>CONTACT</b></a>
+                </div>
+              </div>
+              <div className='newsletter'>
+                <h5>Inscrivez-vous sur notre Newsletter</h5>
+                <br />
+                <div className='newslatter'>
+                  <input type="email" id="email" pattern=".+@globex\.com" size={30} required />
+                  <input className="joinbutton" type="submit" defaultValue="S'inscrire" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='aboutdown'>
+            <hr />
+            <div className='logo'>
+              <img src={require('.//image/Smartlogger_logo.png')} alt="Smartlogger logo" />
+            </div>
+            <div className='terms'>
+              <h6>© SmartLogger | Terms and conditions | Privacy policy | Cookies</h6>
+            </div>
+            <div className='followus'>
+              <h5>Follow us</h5>
+              <div className='iconsfollow'>
+                <AiOutlineInstagram />  <ImLinkedin2 />  <FiFacebook />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
 
     </div >
   )
