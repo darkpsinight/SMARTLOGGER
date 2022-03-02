@@ -453,9 +453,26 @@ const Home = () => {
               <h5>Nous contacter</h5>
               <br />
               <address>
-                <h6><b>Adresse: </b></h6><p>Atelier N°1 Technopole<br />de Sousse Novation City, Tunisie</p>
-                <h6><b>Téléphone: </b></h6><p>+(216) 52 017 986</p>
-                <h6><b>Email: </b></h6><a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a>
+                <div className='adresse'>
+                  <h6><b>Adresse: </b></h6>
+                  <div className='adressetext'><p>Atelier N°1 Technopole<br />de Sousse Novation City, Tunisie</p></div>
+                </div>
+                <div className='telephone'>
+                  <div className='telephonetext'>
+                    <h6><b>Téléphone:</b></h6>
+                  </div>
+                  <div className='telephonenumber'>
+                    <a>+(216) 52 017 986</a>
+                  </div>
+                </div>
+                <div className='email'>
+                  <div className='emailtext'>
+                    <h6><b>Email:</b></h6>
+                  </div>
+                  <div className='emaillink'>
+                    <a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a>
+                  </div>
+                </div>
               </address>
               <div className='contactbutton'>
                 <a href="#"><b>CONTACT</b></a>
@@ -476,11 +493,10 @@ const Home = () => {
               <img src={require('.//image/Smartlogger_logo.png')} alt="Smartlogger logo" />
             </div>
             <div className='terms'>
-              <div><h6>© SmartLogger | </h6></div>
+              <div className='copyright'><h6>© SmartLogger | </h6></div>
               <div className='tandc'><a href='#'>Terms and conditions</a> | </div>
               <div className='policy'><a href='#'>Privacy policy</a> | </div>
               <div className='cookies'><a href='#'>Cookies</a></div>
-              
             </div>
             <div className='followus'>
               <h5>Follow us</h5>
