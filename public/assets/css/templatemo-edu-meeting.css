@@ -91,11 +91,11 @@ html, body {
 
 a {
   text-decoration: none !important;
-  color: #3CF;
+  color: rgb(70, 72, 73);
 }
 
 a:hover {
-	color: #FC3;
+	color: rgb(51, 190, 255);
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -2,14 +2,15 @@ import React from 'react'
 import './home.css'
 import Slider from 'react-slick';
 
-import { AiOutlineInstagram, AiOutlineUserSwitch } from 'react-icons/ai'
+import { AiFillInstagram, AiOutlineUserSwitch } from 'react-icons/ai'
 import { HiOutlineLightBulb } from 'react-icons/hi'
 import { GiBrain, GiFactory, GiPodiumWinner, GiStarsStack, GiPencilBrush } from 'react-icons/gi'
 import { RiLeafLine } from 'react-icons/ri'
 import { BiBuildingHouse, BiCodeBlock } from 'react-icons/bi'
-import { FiFacebook, FiMapPin } from 'react-icons/fi'
+import { FiMapPin } from 'react-icons/fi'
 import { BsCloudCheck, BsCpu } from 'react-icons/bs'
 import { ImLinkedin2, ImMobile } from 'react-icons/im'
+import { FaFacebookF } from 'react-icons/fa'
 
 /* Slide settings */
 const settings = {
@@ -25,19 +26,22 @@ const Home = () => {
     <div className='background-text'>
       <div>
         <section class="heading-page header-text" id="top">
-          <div class="container">
+          <div class="container1">
             <div class="row">
               <div className='headertxt'>
-                <div class="col-lg-12">
-                  <h2>Leader en IoT solutions</h2>
-                  <h6>SMART LOGGER (SML) est une entreprise innovante ayant pour objectif d'accélérer</h6>
-                  <h6>la transformation digitale. SML propose des solutions de monitoring permettant aux</h6>
-                  <h6>clients d'intégrer la composante télécommunication dans la gestion de leur projets.</h6>
-                  <br />
+                <h2>Leader en IoT solutions</h2>
+                <p>SMART LOGGER (SML) est une entreprise innovante ayant pour objectif d'accélérer</p>
+                <p>la transformation digitale. SML propose des solutions de monitoring permettant</p>
+                <p>aux clients d'intégrer la composante télécommunication dans la gestion de leur</p>
+                <p>projets.</p>
+                <br />
+              </div>
+              <div className='buttonstop'>
+                <div className='smlbutton'>
+                  <a href="#"><b>Essayer SML 🠖</b></a>
                 </div>
-                <div>
-                  <button className='button button1'><p>Essayer SML <b className="text">🠖</b></p></button>
-                  <button className='button button2'><p>Découvrir</p></button>
+                <div className='decouvrirbutton'>
+                  <a href="#"><b>Découvrir</b></a>
                 </div>
               </div>
             </div>
@@ -414,72 +418,76 @@ const Home = () => {
       <div>
         <div className='about'>
           <div className='aboutup'>
-            <div className='linksbox'>
-              <div className='solutions'>
-                <h5>Solutions</h5>
-                <br />
-                <a href="#">Smart control</a>
-                <a href="#">Smart monitoring</a>
-                <a href="#">Smart collect</a>
-                <a href="#">Smart irrigation</a>
+            <div className='solutions'>
+              <h5>Solutions</h5>
+              <br />
+              <a href="#">Smart control</a>
+              <a href="#">Smart monitoring</a>
+              <a href="#">Smart collect</a>
+              <a href="#">Smart irrigation</a>
+            </div>
+            <div className='produits'>
+              <h5>Produits</h5>
+              <br />
+              <a href="#">Smart agriculture</a>
+              <a href="#">Smart industry</a>
+              <a href="#">Smart city</a>
+            </div>
+            <div className='espace'>
+              <h5>Espace client</h5>
+              <br />
+              <a href="#">Smart control</a>
+              <a href="#">Smart monitoring</a>
+              <a href="#">Smart collect</a>
+              <a href="#">Smart irrigation</a>
+              <a href="#">Smart healthcare</a>
+              <a href="#">Be Smart</a>
+            </div>
+            <div className='apropos'>
+              <h5>À propos</h5>
+              <br />
+              <a href="#">About us</a>
+              <a href="#">Career</a>
+            </div>
+            <div className='nous_contacter'>
+              <h5>Nous contacter</h5>
+              <br />
+              <address>
+                <h6><b>Adresse: </b></h6><p>Atelier N°1 Technopole<br />de Sousse Novation City, Tunisie</p>
+                <h6><b>Téléphone: </b></h6><p>+(216) 52 017 986</p>
+                <h6><b>Email: </b></h6><a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a>
+              </address>
+              <div className='contactbutton'>
+                <a href="#"><b>CONTACT</b></a>
               </div>
-              <div className='produits'>
-                <h5>Produits</h5>
-                <br />
-                <a href="#">Smart agriculture</a>
-                <a href="#">Smart industry</a>
-                <a href="#">Smart city</a>
-              </div>
-              <div className='espace'>
-                <h5>Espace client</h5>
-                <br />
-                <a href="#">Smart control</a>
-                <a href="#">Smart monitoring</a>
-                <a href="#">Smart collect</a>
-                <a href="#">Smart irrigation</a>
-                <a href="#">Smart healthcare</a>
-                <a href="#">Be Smart</a>
-              </div>
-              <div className='apropos'>
-                <h5>à propos</h5>
-                <br />
-                <a href="#">About us</a>
-                <a href="#">Career</a>
-              </div>
-              <div className='nous_contacter'>
-                <h5>Nous contacter</h5>
-                <br />
-                <address>
-                  <p><b>Adress:</b>Atelier N°1 Technopole<br />de Sousse Novation City, Tunisie</p>
-                  <p><b>Téléphone:</b>+(216) 52 017 986</p>
-                  <p><b>Email:</b><a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a></p>
-                </address>
-                <div className='joinbutton'>
-                  <a href="#"><b>CONTACT</b></a>
-                </div>
-              </div>
-              <div className='newsletter'>
-                <h5>Inscrivez-vous sur notre Newsletter</h5>
-                <br />
-                <div className='newslatter'>
-                  <input type="email" id="email" pattern=".+@globex\.com" size={30} required />
-                  <input className="joinbutton" type="submit" defaultValue="S'inscrire" />
-                </div>
+            </div>
+            <div className='newsletter'>
+              <h5>Inscrivez-vous sur notre Newsletter</h5>
+              <br />
+              <div className='newsletter_inside'>
+                <input className='newsletter_input' type="email" id="email" placeholder='Entrez votre adresse mail...' pattern=".+@globex\.com" size={30} required />
+                <input className="sincrirebutton" type="submit" value="S'inscrire" />
               </div>
             </div>
           </div>
+          <hr />
           <div className='aboutdown'>
-            <hr />
             <div className='logo'>
               <img src={require('.//image/Smartlogger_logo.png')} alt="Smartlogger logo" />
             </div>
             <div className='terms'>
-              <h6>© SmartLogger | Terms and conditions | Privacy policy | Cookies</h6>
+              <div><h6>© SmartLogger | </h6></div>
+              <div className='tandc'><a href='#'>Terms and conditions</a> | </div>
+              <div className='policy'><a href='#'>Privacy policy</a> | </div>
+              <div className='cookies'><a href='#'>Cookies</a></div>
+              
             </div>
             <div className='followus'>
               <h5>Follow us</h5>
               <div className='iconsfollow'>
-                <AiOutlineInstagram />  <ImLinkedin2 />  <FiFacebook />
+                <div className='instagram'><a href="#"> <AiFillInstagram /></a></div>
+                <div className='linkedin'><a href="#"> <ImLinkedin2 /></a></div>
+                <div className='facebook'><a href="#"> <FaFacebookF /></a></div>
               </div>
             </div>
           </div>
