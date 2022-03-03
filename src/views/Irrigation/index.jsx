@@ -29,7 +29,7 @@ const Irrigation = () => {
                                 </div>
                             </div>
                             <div className='headertext'>
-                                <p>SMART IRRIGATION consiste à moderniserla gestion des champs irrigués. Le package proposé contient principalement un kit électronique</p>
+                                <p>SMART IRRIGATION consiste à moderniser la gestion des champs irrigués. Le package proposé contient principalement un kit électronique</p>
                                 <p>connecté à l'internet capable de commander à distance les vannes  et les motopompes d'irrigation via une application mobile. Cet outil permet à</p>
                                 <p>l'agriculteur d'épargner le déplacement sur site et il lui permet de définir des temps d'irrigation trés précis. En plus nous proposons l'installation</p>
                                 <p>des capteurs intelligents pour faire de l'échantilonnage sur des differents niveau de sols afin d'informer l'agriculteur sur le pourcentage</p>
@@ -143,8 +143,6 @@ const Irrigation = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     )
 }

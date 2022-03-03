@@ -1,0 +1,71 @@
+html,
+body {
+  font-family: "futura", sans-serif;
+}
+
+#back_image {
+  background-image: url(./../../../public/assets/images/7_black.png);
+  height: 755px;
+}
+
+.icone img {
+  width: 55px;
+}
+
+.irrigation_titre1 h3 {
+  margin-top: 10px;
+  color: white;
+}
+
+.irrigation_titre2 h1 {
+  margin-top: 15px;
+  color: white;
+}
+
+.irrigation_titre3 h4 {
+  color: white;
+}
+
+.headertext {
+  color: white;
+  margin-top: 40px;
+}
+
+.headertext p {
+  font-size: large;
+}
+
+.telecharger_button a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: #5cc3c6;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  margin-right: 50px;
+}
+
+.telecharger_button:hover a {
+  background-color: #5cc2c6e5;
+}
+
+.administrateur_button a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: #7a7a7d36;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 22px;
+  border: solid #f2f2f2 1px;
+}
+
+.administrateur_button:hover a {
+  background-color: #979797;
+  color: white;
+}

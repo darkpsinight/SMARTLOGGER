@@ -56,7 +56,7 @@ const Home = () => {
               <h1><b>Nos valeurs</b></h1>
             </div>
             <div className="nosactions">
-              <h6>Nos actions se nourrissent chaque jours de nos valeurs</h6>
+              <h6>Nos actions se nourrissent chaque jours de nos<br />valeurs</h6>
             </div>
           </div>
         </section>
@@ -65,25 +65,25 @@ const Home = () => {
       <div className="iconsandtexts">
         <div className="engagement">
           <div className="engagementicon">
-            <AiOutlineUserSwitch className="icon1" />
+            <div className="icon1" ><img src='./../../assets/images/engagement.png' alt="engagement"></img></div>
           </div>
           <p>Engagement</p>
         </div>
         <div className="innovation">
           <div className="innovationicon">
-            <HiOutlineLightBulb className="icon2" />
+            <div className="icon2" ><img src='./../../assets/images/innovation.png' alt="innovation"></img></div>
           </div>
           <p>Innovation</p>
         </div>
         <div className="exellence">
           <div className="exellenceicon">
-            <GiPodiumWinner className="icon3" />
+            <div className="icon3" ><img src='./../../assets/images/Excellence.png' alt="Excellence"></img></div>
           </div>
           <p>Exellence</p>
         </div>
         <div className="satisfaction">
           <div className="satisfactionicon">
-            <GiStarsStack className="icon4" />
+            <div className="icon4" ><img src='./../../assets/images/Satisfaction.png' alt="Satisfaction"></img></div>
           </div>
           <p>Satisfaction</p>
         </div>
@@ -221,7 +221,7 @@ const Home = () => {
                   <div className='iconbox'>
                     <div className="expertiseicon1">
                       <br /><br /><br /><br />
-                      <i className="material-icons md-36"><BsCpu /></i>
+                      <i className="material-icons md-36"><img src='./../../assets/images/BsCpu.png' alt="BsCpu"></img></i>
                     </div>
                   </div>
                   <div className='cardtext'>
@@ -244,7 +244,7 @@ const Home = () => {
                   <div className='iconbox'>
                     <div className="expertiseicon2">
                       <br /><br /><br /><br />
-                      <i className="material-icons md-36"><BsCloudCheck /></i>
+                      <i className="material-icons md-36"><i className="material-icons md-36"><img src='./../../assets/images/BsCloudCheck.png' alt="BsCloudCheck"></img></i></i>
                     </div>
                   </div>
                   <div className='cardtext'>
@@ -267,7 +267,7 @@ const Home = () => {
                   <div className='iconbox'>
                     <div className="expertiseicon3">
                       <br /><br /><br /><br />
-                      <i className="material-icons md-36"><GiBrain /></i>
+                      <i className="material-icons md-36"><img src='./../../assets/images/GiBrain.png' alt="GiBrain"></img></i>
                     </div>
                   </div>
                   <div className='cardtext'>
@@ -292,7 +292,7 @@ const Home = () => {
                   <div className='iconbox'>
                     <div className="expertiseicon4">
                       <br /><br /><br /><br />
-                      <i className="material-icons md-36"><BiCodeBlock /></i>
+                      <i className="material-icons md-36"><img src='./../../assets/images/BiCodeBlock.png' alt="BiCodeBlock"></img></i>
                     </div>
                   </div>
                   <div className='cardtext'>
@@ -315,7 +315,7 @@ const Home = () => {
                   <div className='iconbox'>
                     <div className="expertiseicon5">
                       <br /><br /><br /><br />
-                      <i className="material-icons md-36"><ImMobile /></i>
+                      <i className="material-icons md-36"><img src='./../../assets/images/ImMobile.png' alt="ImMobile"></img></i>
                     </div>
                   </div>
                   <div className='cardtext'>
@@ -338,7 +338,7 @@ const Home = () => {
                   <div className='iconbox'>
                     <div className="expertiseicon6">
                       <br /><br /><br /><br />
-                      <i className="material-icons md-36"><GiPencilBrush /></i>
+                      <i className="material-icons md-36"><img src='./../../assets/images/GiPencilBrush.png' alt="GiPencilBrush"></img></i>
                     </div>
                   </div>
                   <div className='cardtext'>

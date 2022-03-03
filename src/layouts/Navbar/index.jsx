@@ -19,7 +19,7 @@ export default () => {
                                 {/* ***** Logo Start ***** */}
                                 <div className='logo'>
                                     <style>{css}</style>
-                                    <img src={require('.//../../../src/views/Home/image/Smartlogger_logo.png')} alt="Smartlogger logo" />
+                                    <img src={require('.//../../../src/views/Home/image/smartloggerheader_logo.png')} alt="Smartlogger logo" />
                                 </div>
                                 {/* ***** Logo End ***** */}
                                 {/* ***** Menu Start ***** */}

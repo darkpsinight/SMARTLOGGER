@@ -1,5 +1,6 @@
-html, body {
-  font-family: 'futura', sans-serif;
+html,
+body {
+  font-family: "futura", sans-serif;
 }
 
 #top {
@@ -53,12 +54,9 @@ html, body {
   color: white;
 }
 
-.headertxt {
-  text-align: justify;
-}
-
 .headertxt p {
   color: white;
+  font-size: large;
 }
 
 /*no valeurs*/
@@ -68,7 +66,7 @@ html, body {
   font-size: large;
   color: black;
   font-family: "futura", sans-serif;
-  margin-top: 56.7px;
+  margin-top: 100px;
 }
 
 .nosactions {
@@ -118,6 +116,7 @@ html, body {
   display: flex;
   justify-content: center;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .innovation {
@@ -136,6 +135,7 @@ html, body {
   display: flex;
   justify-content: center;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .exellence {
@@ -154,6 +154,7 @@ html, body {
   display: flex;
   justify-content: center;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .satisfaction {
@@ -172,6 +173,7 @@ html, body {
   display: flex;
   justify-content: center;
   font-weight: bold;
+  margin-top: 20px; 
 }
 
 .quote2 {
@@ -181,6 +183,7 @@ html, body {
 
 .smarttitle {
   color: black;
+  margin-top: -20px;
 }
 
 .smarttext {
@@ -719,7 +722,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #EF885A;
+  color: #ef885a;
   transition: all 0.8s ease;
   background-position: 0px;
   background-size: 200px;
@@ -751,7 +754,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #E082F0;
+  color: #e082f0;
   transition: all 0.8s ease;
   background-position: 0px;
   background-size: 200px;
@@ -1077,7 +1080,7 @@ html, body {
 }
 
 .copyright {
-  color: #535353  ;
+  color: #535353;
 }
 
 .terms a {
