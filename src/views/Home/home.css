@@ -41,7 +41,7 @@ html, body {
   text-align: center;
   font-size: 15px;
   color: white;
-  background-color: #7a7a7dda;
+  background-color: #7a7a7d69;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
@@ -49,7 +49,7 @@ html, body {
 }
 
 .decouvrirbutton:hover a {
-  background-color: #979797;
+  background-color: #979797bd;
   color: white;
 }
 
@@ -1119,7 +1119,7 @@ html, body {
 }
 
 .iconsfollow {
-  margin-left: 70px;
+  margin-left: 122px;
   font-size: large;
   display: flex;
   flex-direction: row;

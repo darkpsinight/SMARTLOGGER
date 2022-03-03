@@ -187,7 +187,7 @@ const Home = () => {
       <div className='row'>
         <div className='why'>
           <div className='imagewhy'>
-            <img src='./../../assets/images/why.PNG' alt=""></img>
+            <img src='./../../assets/images/why.PNG' alt="why"></img>
           </div>
           <div className='textwhy'>
             <h1>Pourquoi nous ?</h1> <br />
