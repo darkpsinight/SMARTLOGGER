@@ -558,7 +558,7 @@ html, body {
 /*Pourquoi nous?*/
 .why {
   background-color: black;
-  width: 100%;
+  width: 1530px;
   height: 520px;
   display: flex;
   align-items: center;
@@ -719,7 +719,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #586ce7;
+  color: #EF885A;
   transition: all 0.8s ease;
   background-position: 0px;
   background-size: 200px;
@@ -735,7 +735,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #586ce7;
+  color: #248726;
   transition: all 0.8s ease;
   background-position: 0px;
   background-size: 200px;
@@ -751,12 +751,13 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #586ce7;
+  color: #E082F0;
   transition: all 0.8s ease;
   background-position: 0px;
   background-size: 200px;
   font-size: 500px;
 }
+
 .iconbox {
   background-color: #f7f8ff;
   height: 100px;

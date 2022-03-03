@@ -3,7 +3,6 @@ import './navbar.css'
 
 export default () => {
 
-
     const css = `
     .logo {
         width: 230px;

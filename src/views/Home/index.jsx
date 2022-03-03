@@ -17,8 +17,8 @@ const settings = {
   dots: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 6,
-  slidesToScroll: 2
+  slidesToShow: 4,
+  slidesToScroll: 1
 };
 
 const Home = () => {
@@ -290,14 +290,14 @@ const Home = () => {
               <div className="expertisecard">
                 <div className='expertisecardinside'>
                   <div className='iconbox'>
-                    <div className="expertiseicon1">
+                    <div className="expertiseicon4">
                       <br /><br /><br /><br />
                       <i className="material-icons md-36"><BiCodeBlock /></i>
                     </div>
                   </div>
                   <div className='cardtext'>
                     <div className='expertisecardtitle'>
-                      <p><h4>Développement <br />web</h4></p>
+                      <p><h4>Développement web</h4></p>
                     </div>
                     <div className='expertisecardnote1'>
                       <p>Nous proposons une large gamme de<br />services de développement Web<br /> personnalisés de bout qui<br /> répondent à divers besoins et secteurs<br /> d'activité.</p>
@@ -313,7 +313,7 @@ const Home = () => {
               <div className="expertisecard">
                 <div className='expertisecardinside'>
                   <div className='iconbox'>
-                    <div className="expertiseicon2">
+                    <div className="expertiseicon5">
                       <br /><br /><br /><br />
                       <i className="material-icons md-36"><ImMobile /></i>
                     </div>
@@ -336,7 +336,7 @@ const Home = () => {
               <div className="expertisecard">
                 <div className='expertisecardinside'>
                   <div className='iconbox'>
-                    <div className="expertiseicon3">
+                    <div className="expertiseicon6">
                       <br /><br /><br /><br />
                       <i className="material-icons md-36"><GiPencilBrush /></i>
                     </div>
@@ -400,7 +400,7 @@ const Home = () => {
                 <div className='Germanlogo'>
                   <img src={require('.//image/German-logo.jpg')} alt="German logo" />
                 </div>
-                <div>
+                {/* <div>
                   <h2>6</h2>
                 </div>
                 <div>
@@ -408,7 +408,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h2>8</h2>
-                </div>
+                </div> */}
               </Slider>
             </div>
           </div>
