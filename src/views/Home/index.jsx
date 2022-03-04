@@ -27,7 +27,7 @@ const Home = () => {
       <div>
         <section class="heading-page header-text" id="top">
           <div class="container1">
-            <div class="row">
+            <div class="e">
               <div className='headertxt'>
                 <h2>Leader en IoT solutions</h2>
                 <p>SMART LOGGER (SML) est une entreprise innovante ayant pour objectif d'accélérer</p>
@@ -49,7 +49,7 @@ const Home = () => {
         </section>
       </div>
       {/* Nos valeurs */}
-      <div className='row'>
+      <div className='e'>
         <section>
           <div className="quote">
             <div className="nosvaleurs">
@@ -119,7 +119,7 @@ const Home = () => {
                 </div>
               </div>
               <div class="cardbutton">
-                <a href="#"><b>Découvrir</b></a>
+                <a href="/irrigation"><b>Découvrir</b></a>
               </div>
             </div>
             {/* end card */}
@@ -138,7 +138,7 @@ const Home = () => {
                 </div>
               </div>
               <div class="cardbutton">
-                <a href="#"><b>Découvrir</b></a>
+                <a href="/control"><b>Découvrir</b></a>
               </div>
             </div>
             {/* end card */}
@@ -184,7 +184,7 @@ const Home = () => {
         </div>
       </div>
       {/* Pourquoi nous ? */}
-      <div className='row'>
+      <div className='e'>
         <div className='why'>
           <div className='imagewhy'>
             <img src='./../../assets/images/why.PNG' alt="why"></img>
@@ -208,7 +208,7 @@ const Home = () => {
       {/* Les 6 cards */}
       <div>
         <div className='container'>
-          <div className='row'>
+          <div className='e'>
             <div className='expertisetitle'>
               <h1>Notre expertise</h1>
             </div>
@@ -421,10 +421,10 @@ const Home = () => {
             <div className='solutions'>
               <h5>Solutions</h5>
               <br />
-              <a href="#">Smart control</a>
+              <a href="/control">Smart control</a>
               <a href="#">Smart monitoring</a>
               <a href="#">Smart collect</a>
-              <a href="#">Smart irrigation</a>
+              <a href="/irrigation">Smart irrigation</a>
             </div>
             <div className='produits'>
               <h5>Produits</h5>
@@ -493,9 +493,9 @@ const Home = () => {
               <img src={require('.//image/Smartlogger_logo.png')} alt="Smartlogger logo" />
             </div>
             <div className='terms'>
-              <div className='copyright'><h6>© SmartLogger | </h6></div>
-              <div className='tandc'><a href='#'>Terms and conditions</a> | </div>
-              <div className='policy'><a href='#'>Privacy policy</a> | </div>
+              <div className='copyright'><h6>©SmartLogger|</h6></div>
+              <div className='tandc'><a href='#'>Terms and conditions</a>|</div>
+              <div className='policy'><a href='#'>Privacy policy</a>|</div>
               <div className='cookies'><a href='#'>Cookies</a></div>
             </div>
             <div className='followus'>

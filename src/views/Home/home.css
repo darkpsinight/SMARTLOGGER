@@ -10,8 +10,15 @@ body {
 }
 
 .container1 {
+  display: flex;
+  flex-direction: column;
   margin-top: -250px;
   margin-left: 200px;
+  margin-right: 200px;
+}
+
+.test{
+  max-width: 1000px;
 }
 
 .buttonstop {
@@ -561,7 +568,7 @@ body {
 /*Pourquoi nous?*/
 .why {
   background-color: black;
-  width: 1530px;
+  width: 100%;
   height: 520px;
   display: flex;
   align-items: center;
@@ -809,7 +816,7 @@ body {
 
 .jointeam {
   background-image: url(../../../public//assets/images/11_black.png);
-  width: 1520px;
+  width: 100%;
   height: 425px;
   margin-top: 60px;
 }
@@ -890,9 +897,11 @@ body {
 /* Footer */
 
 .about {
+  display: flex;
+  flex-direction: column;
   background-color: #000;
   width: 100%;
-  height: 410px;
+  height: auto;
 }
 
 .aboutup {
@@ -900,7 +909,7 @@ body {
   flex-direction: row;
   margin-left: 10%;
   margin-right: 10%;
-  max-height: 70%;
+  max-height: auto;
 }
 
 .aboutdown {
@@ -1116,13 +1125,15 @@ body {
 .followus {
   display: flex;
   flex-direction: row;
-  margin-left: 150px;
+  margin-left: 100px;
   margin-top: 30px;
   color: #cbcbcb;
 }
 
 .iconsfollow {
-  margin-left: 122px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
   font-size: large;
   display: flex;
   flex-direction: row;
