@@ -1,5 +1,4 @@
 import React from 'react';
-import './navbar.css'
 import '../../views/Home/index.jsx'
 
 export default () => {
@@ -25,17 +24,14 @@ export default () => {
                                 {/* ***** Logo End ***** */}
                                 {/* ***** Menu Start ***** */}
                                 <ul className="nav">
-                                    <li><a href="#iotsolutions">IoT Solutions</a></li>
-                                    <li><a href="#produits" /* className="active" */>IoT Produits</a></li>
+                                    <li><a href="#iotsolutions">Nos valeurs</a></li>
+                                    <li><a href="#produits" /* className="active" */>Nos solutions</a></li>
                                     <li><a href="#expertise">Notre expertise</a></li>
-                                    <li><a href="#apropos">À propos</a></li>
+                                    <li><a href="/apropos">À propos</a></li>
                                     <div class="main-button-red">
-                                        <div class="scroll-to-section"><a href="#contact">CONTACT</a></div>
+                                        <div class="scroll-to-section"><a href="/contact">CONTACT</a></div>
                                     </div>
                                 </ul>
-                                <a className="menu-trigger">
-                                    <span>Menu</span>
-                                </a>
                                 {/* ***** Menu End ***** */}
                             </nav>
                         </div>

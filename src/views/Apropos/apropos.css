@@ -1,0 +1,79 @@
+html,
+body {
+  font-family: "futura", sans-serif;
+}
+
+#background_image_apropos {
+  background-image: url(./../../../public/assets/images/a-propos.png);
+  height: 755px;
+  margin-bottom: -250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icone img {
+  width: 55px;
+}
+
+.apropos-title p {
+  color: white;
+  font-size: 80px;
+}
+
+.apropos_note p {
+  color: white;
+  font-size: 22px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  color: white;
+}
+
+.notre_mission {
+  display: flex;
+  flex-direction: row;
+  line-height: 2;
+  margin-right: 100px;
+}
+
+.mission_text{
+    margin-top: -5px;
+}
+
+.mission_icon {
+  max-width: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.notre_vision {
+  display: flex;
+  flex-direction: row;
+  line-height: 2;
+  margin-right: 100px;
+}
+
+.vision_text{
+    margin-top: -5px;
+}
+
+.vision_icon {
+  max-width: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.notre_plan {
+  display: flex;
+  flex-direction: row;
+  line-height: 2;
+}
+
+.plan_icon {
+  max-width: 50px;
+  margin-right: 10px;
+  width: 50px;
+}

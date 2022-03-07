@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Control/control.css'
+import './apropos.css'
 
 import { AiFillInstagram } from 'react-icons/ai'
 import { ImLinkedin2 } from 'react-icons/im'
@@ -7,37 +7,50 @@ import { FaFacebookF } from 'react-icons/fa'
 import { BsDownload } from 'react-icons/bs'
 
 
-const Control = () => {
+const Irrigation = () => {
     return (
         <div className='background-text'>
             <div>
-                <section class="heading-page header-text" id="back_image_control">
+                <section class="heading-page header-text" id="background_image_apropos">
                     <div class="container1">
                         <div class="row">
-                            <div className='icone'>
-                                <div className='irrigation_icon'>
-                                    <img src='./../../assets/images/control_icon.png' alt="control_icon"></img>
-                                </div>
-                                <div className='irrigation_titre1'>
-                                    <h3>IoT Solution</h3>
-                                </div>
-                                <div className='irrigation_titre2'>
-                                    <h1>Smart control</h1>
-                                </div>
-                                <div className='irrigation_titre3'>
-                                    <h4>Contrôler intelligemment</h4>
+                            <div className='apropos-text'>
+                                <div className='apropos-title'>
+                                    <p>QUI SOMMES NOUS ?</p>
                                 </div>
                             </div>
-                            <div className='headertext'>
-                                <p>SMART CONTROL consiste à sécuriser l'emmagasinage des produits alimentaires dans les entrepôts frigorifiques. En effet notre kit électronique converti des indicateurs de performances, généralement des grandeurs physiques telles que la température, le taux d'humidité en des Data Cloud accessibles à distance sur une base de données. L'utilisateur peut surveiller son espace à distance sur une plateforme web à travers l'internet. En cas d'anomalie, instantanément il reçoit une alerte afin de réagir le plus rapide possible.</p>
+                            <div className='apropos_note'>
+                                <p>SMART LOGGER est une startup Tunisienne nouvellement dévoilée par une équipe d'ingénieurs. Grâce à son staff multidisciplinaire et à ses rapports étroits avec ses partenaires, elle fournit des solutions technologiques innovantes ayant pour objectif d'accélérer la transformation digitale de ses clients notamment dans les secteurs industriel, agricole et médical.</p>
                                 <br />
                             </div>
-                            <div className='buttonstop'>
-                                <div className='telecharger_button'>
-                                    <a href="#"><b>Télécharger &nbsp;&nbsp; <BsDownload /></b></a>
+                            {/* les 3 details */}
+                            <div className='details'>
+                                <div className='notre_mission'>
+                                    <div className='mission_icon'>
+                                        <img src={require('.//img/iconmission.png')} alt="notre mission icon" />
+                                    </div>
+                                    <div className='mission_text'>
+                                        <p>Notre Mission</p>
+                                        <p>Accélérer la transformation digitale</p>
+                                    </div>
                                 </div>
-                                <div className='administrateur_button'>
-                                    <a href="https://www.smartlogger.tn/smart-control"><b>Plateforme administrateur</b></a>
+                                <div className='notre_vision'>
+                                    <div className='vision_icon'>
+                                        <img src={require('.//img/iconvision.png')} alt="notre mission icon" />
+                                    </div>
+                                    <div className='vision_text'>
+                                        <p>Notre Vision</p>
+                                        <p>Rapprocher le futur</p>
+                                    </div>
+                                </div>
+                                <div className='notre_plan'>
+                                    <div className='plan_icon'>
+                                        <img src={require('.//img/iconplan.png')} alt="notre mission icon" />
+                                    </div>
+                                    <div className='plan_text'>
+                                        <p>Notre Plan</p>
+                                        <p>Intégrer les nouvelles technologies</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +58,7 @@ const Control = () => {
                 </section>
             </div>
             {/* Footer */}
-            <div id='apropos'>
+            <div>
                 <div className='about'>
                     <div className='aboutup'>
                         <div className='solutions'>
@@ -135,4 +148,4 @@ const Control = () => {
     )
 }
 
-export default Control
+export default Irrigation

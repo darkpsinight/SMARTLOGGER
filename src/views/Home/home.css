@@ -1,6 +1,5 @@
-html,
 body {
-  font-family: "futura", sans-serif;
+  font-family: futura;
 }
 
 #top {
@@ -17,7 +16,7 @@ body {
   margin-right: 200px;
 }
 
-.test{
+.test {
   max-width: 1000px;
 }
 
@@ -40,7 +39,7 @@ body {
 }
 
 .smlbutton:hover a {
-  background-color: #5cc2c6e5;
+  background-color: #69d1d4;
 }
 
 .decouvrirbutton a {
@@ -61,16 +60,21 @@ body {
   color: white;
 }
 
+.headertxt .headertitle p {
+  font-size: 45px;
+}
+
 .headertxt p {
+  font-family: "futura", sans-serif;
   color: white;
-  font-size: large;
+  font-size: 17px;
 }
 
 /*no valeurs*/
 
 .nosvaleurs {
   text-align: center;
-  font-size: large;
+  font-size: 45px;
   color: black;
   font-family: "futura", sans-serif;
   margin-top: 100px;
@@ -80,6 +84,7 @@ body {
   text-align: center;
   color: #757575;
   font-family: "futura", sans-serif;
+  font-size: 17px;
 }
 
 .iconsandtexts {
@@ -113,7 +118,7 @@ body {
 }
 
 .engagement:hover {
-  background-color: #94dcde;
+  background-color: #5CC3C6;
   border-radius: 5%;
   padding: 70px;
   color: #ffffff;
@@ -132,7 +137,7 @@ body {
 }
 
 .innovation:hover {
-  background-color: #94dcde;
+  background-color: #5CC3C6;
   border-radius: 5%;
   padding: 70px;
   color: #ffffff;
@@ -151,7 +156,7 @@ body {
 }
 
 .exellence:hover {
-  background-color: #94dcde;
+  background-color: #5CC3C6;
   border-radius: 5%;
   padding: 70px;
   color: #ffffff;
@@ -170,7 +175,7 @@ body {
 }
 
 .satisfaction:hover {
-  background-color: #94dcde;
+  background-color: #5CC3C6;
   border-radius: 5%;
   padding: 70px;
   color: #ffffff;
@@ -180,7 +185,7 @@ body {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .quote2 {
@@ -191,11 +196,14 @@ body {
 .smarttitle {
   color: black;
   margin-top: -20px;
+  font-size: 45px;
 }
 
 .smarttext {
   color: #757575;
   margin-top: 25px;
+  font-size: 17px;
+  line-height: 25px;
 }
 
 .card:hover .cardtext {
@@ -594,6 +602,10 @@ body {
   padding-left: 150px;
   color: lightgray;
 }
+.list li {
+  color: white;
+}
+
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee     expertise cards     eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee*/
 .cardscontainer {
   display: flex;
@@ -609,14 +621,14 @@ body {
   margin-top: 50px;
 }
 
-.expertisetitle h1 {
+.expertisetitle {
   text-align: center;
   color: black;
-  font-weight: bold;
   margin-top: 20px;
   text-align: center;
   font-family: "futura", sans-serif;
   margin-top: 56.7px;
+  font-size: 45px;
 }
 
 .cardscolumns1 {
@@ -831,10 +843,13 @@ body {
 
 .jointitle {
   color: white;
+  font-size: 45px;
 }
+
 .joinnote {
   color: white;
-  padding-top: 60px;
+  padding-top: 27px;
+  font-size: 17px;
 }
 
 .joinbutton a {
@@ -843,12 +858,12 @@ body {
   text-align: center;
   font-size: 15px;
   color: white;
-  background-color: #5cc3c6;
+  background-color: #5CC3C6;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
   transition: all 0.3s;
-  margin-top: 80px;
+  margin-top: 42px;
 }
 
 .joinbutton:hover a {
@@ -862,8 +877,9 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 107px;
   margin-bottom: 100px;
+  font-size: 45px;
 }
 
 .slidecontainer {
@@ -886,12 +902,26 @@ body {
   color: #000;
 }
 
+.totallogo{
+  max-width: 65%;
+}
+
+.apialogo {
+  max-width: 73%;
+  margin-left: -60px;
+}
+
+.iotlogo {
+  max-width: 90%;
+  margin-left: -30px;
+}
+
 .wsalogo {
-  margin-top: 30px;
+  max-width: 100%;
 }
 
 .Germanlogo {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* Footer */
@@ -902,7 +932,7 @@ body {
   background-color: #000;
   width: 100%;
   height: auto;
-  margin-top: 150px;
+  margin-top: 250px;
 }
 
 .aboutup {
@@ -926,7 +956,8 @@ body {
   flex-direction: column;
   max-width: 150px;
   margin-top: 50px;
-  margin-right: 30px;
+  margin-right: 60px;
+  margin-left: 100px;
 }
 
 .solutions h5 {
@@ -938,7 +969,7 @@ body {
   flex-direction: column;
   max-width: 150px;
   margin-top: 50px;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 .produits h5 {
@@ -950,7 +981,7 @@ body {
   flex-direction: column;
   max-width: 150px;
   margin-top: 50px;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 .espace h5 {
@@ -962,7 +993,7 @@ body {
   flex-direction: column;
   max-width: 150px;
   margin-top: 50px;
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 .apropos h5 {
@@ -999,14 +1030,15 @@ body {
   text-align: center;
   font-size: 15px;
   color: white;
-  background-color: #5cc3c6;
+  background-color: #5CC3C6;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 22px;
+  margin-top: 20px;
 }
 
 .adressetext {
-  color: #3e4246;
+  color: rgb(115, 116, 117);
 }
 
 .email {
@@ -1025,7 +1057,7 @@ body {
 
 .telephonenumber {
   margin-left: 6px;
-  color: #3e4246;
+  color: rgb(115, 116, 117);
 }
 
 .telephonenumber:hover {
@@ -1033,6 +1065,7 @@ body {
   color: #94dcde;
 }
 
+/* 
 .newsletter {
   display: flex;
   flex-direction: column;
@@ -1067,14 +1100,14 @@ body {
 
 .newsletter h5 {
   color: #cbcbcb;
-}
+} */
 
 .sincrirebutton {
   display: flex;
   flex-direction: row;
   font-size: 15px;
   color: white;
-  background-color: #5cc3c6;
+  background-color: #5CC3C6;
   padding: 12px 30px;
   border-radius: 25px;
   margin-left: 30px;
@@ -1126,7 +1159,7 @@ body {
 .followus {
   display: flex;
   flex-direction: row;
-  margin-left: 210px;
+  margin-left: 150px;
   margin-top: 30px;
   color: #cbcbcb;
 }
@@ -1134,11 +1167,12 @@ body {
 .iconsfollow {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
+  margin-left: 80px;
   font-size: large;
   display: flex;
   flex-direction: row;
 }
+
 .iconsfollow a {
   color: white;
   margin: 3px;

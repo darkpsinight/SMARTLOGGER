@@ -29,7 +29,9 @@ const Home = () => {
           <div class="container1">
             <div class="e">
               <div className='headertxt'>
-                <h2>Leader en IoT solutions</h2>
+                <div className='headertitle'>
+                  <p>Leader en IoT solutions</p>
+                </div>
                 <p>SMART LOGGER (SML) est une entreprise innovante ayant pour objectif d'accélérer</p>
                 <p>la transformation digitale. SML propose des solutions de monitoring permettant</p>
                 <p>aux clients d'intégrer la composante télécommunication dans la gestion de leur</p>
@@ -38,10 +40,10 @@ const Home = () => {
               </div>
               <div className='buttonstop'>
                 <div className='smlbutton'>
-                  <a href="#"><b>Essayer SML 🠖</b></a>
+                  <a href="/contact">Essayer SML 🠖</a>
                 </div>
                 <div className='decouvrirbutton'>
-                  <a href="#"><b>Découvrir</b></a>
+                  <a href="#smartsolution">Découvrir</a>
                 </div>
               </div>
             </div>
@@ -53,10 +55,10 @@ const Home = () => {
         <section>
           <div className="quote">
             <div className="nosvaleurs">
-              <h1><b>Nos valeurs</b></h1>
+              <p><b>Nos valeurs</b></p>
             </div>
             <div className="nosactions">
-              <h6>Nos actions se nourrissent chaque jours de nos<br />valeurs</h6>
+              <p>Nos actions se nourrissent chaque jours de nos<br />valeurs</p>
             </div>
           </div>
         </section>
@@ -89,14 +91,14 @@ const Home = () => {
         </div>
       </div>
       {/* Smart solution for a digital futur */}
-      <div className="quote2">
+      <div className="quote2" id='smartsolution'>
         <div className="smarttitle">
-          <h1><b>Smart solution for a digital futur</b></h1>
+          <p><b>Smart solution for a digital futur</b></p>
         </div>
         <div className="smarttext">
-          <h6>Nous innovons pour satisfaire nos clients!</h6>
-          <h6>SMART LOGGER présente plusieur solutions innovantes au service de l'industrie,</h6>
-          <h6>l'agriculture, et l'environnement.</h6>
+          <p>Nous innovons pour satisfaire nos clients!</p>
+          <p>SMART LOGGER présente plusieur solutions innovantes au service de l'industrie,</p>
+          <p>l'agriculture, et l'environnement.</p>
         </div>
       </div>
       {/* Les 4 cards */}
@@ -187,14 +189,14 @@ const Home = () => {
       <div className='e'>
         <div className='why'>
           <div className='imagewhy'>
-            <img src='./../../assets/images/why.PNG' alt="why"></img>
+            <img src='./../../assets/images/why.png' alt="why"></img>
           </div>
           <div className='textwhy'>
             <h1>Pourquoi nous ?</h1> <br />
             <p>SMART LOGGER accélerateur de la  transformation digitale</p>
             <p>dans le secteur agricole, environnementale et industriel.</p>
             <br />
-            <ul>
+            <ul className='list'>
               <li>⚬ La prise de décision</li>
               <li>⚬ Gestion de commande</li>
               <li>⚬ Traçabilité</li>
@@ -210,7 +212,7 @@ const Home = () => {
         <div className='container'>
           <div id='expertise'>
             <div className='expertisetitle'>
-              <h1>Notre expertise</h1>
+              <p>Notre expertise</p>
             </div>
           </div>
           <div className="content2">
@@ -364,13 +366,13 @@ const Home = () => {
         <div className='jointeam'>
           <div className='joininside'>
             <div className='jointitle'>
-              <h1>Join our team!</h1>
+              <p>Join our team!</p>
             </div>
             <div className='joinnote'>
               <p>Nous favorisons une atmosphère amicale et solidaire, où le partage des connaissances et les initiatives sont valorisés et encouragés.<br />Chaque membre de notre équipe contribue à façonner l'évolution de notre entreprise<br /></p>
             </div>
             <div className='joinbutton'>
-              <a href="#">Rejoindre</a>
+              <a href="/contact">Rejoindre</a>
             </div>
           </div>
         </div>
@@ -379,19 +381,19 @@ const Home = () => {
       <div>
         <div className='references'>
           <div className='title'>
-            <h1>Nos Références</h1>
+            <p>Nos Références</p>
           </div>
           <div className='slideshow'>
             <div className="slidecontainer">
               <br />
               <Slider {...settings}>
-                <div>
+                <div className='totallogo'>
                   <img src={require('.//image/Total-logo.jpg')} alt="Total logo" />
                 </div>
-                <div>
+                <div className='apialogo'>
                   <img src={require('.//image/APIA-logo.jpg')} alt="APIA logo" />
                 </div>
-                <div>
+                <div className='iotlogo'>
                   <img src={require('.//image/IoT-logo.jpg')} alt="IoT logo" />
                 </div>
                 <div className='wsalogo'>
@@ -422,31 +424,31 @@ const Home = () => {
               <h5>Solutions</h5>
               <br />
               <a href="/control">Smart control</a>
-              <a href="#">Smart monitoring</a>
+              <a href="/control">Smart monitoring</a>
               <a href="#">Smart collect</a>
               <a href="/irrigation">Smart irrigation</a>
             </div>
             <div className='produits'>
               <h5>Produits</h5>
               <br />
-              <a href="#">Smart agriculture</a>
-              <a href="#">Smart industry</a>
+              <a href="/irrigation">Smart agriculture</a>
+              <a href="/control">Smart industry</a>
               <a href="#">Smart city</a>
             </div>
             <div className='espace'>
               <h5>Espace client</h5>
               <br />
-              <a href="#">Smart control</a>
+              <a href="/control">Smart control</a>
               <a href="#">Smart monitoring</a>
               <a href="#">Smart collect</a>
-              <a href="#">Smart irrigation</a>
+              <a href="/irrigation">Smart irrigation</a>
               <a href="#">Smart healthcare</a>
               <a href="#">Be Smart</a>
             </div>
             <div className='apropos'>
               <h5>À propos</h5>
               <br />
-              <a href="#">About us</a>
+              <a href="apropos">About us</a>
               <a href="#">Career</a>
             </div>
             <div className='nous_contacter'>
@@ -455,7 +457,7 @@ const Home = () => {
               <address>
                 <div className='adresse'>
                   <h6><b>Adresse: </b></h6>
-                  <div className='adressetext'><p>Atelier N°1 Technopole<br />de Sousse Novation City, Tunisie</p></div>
+                  <div className='adressetext'><p>Atelier N°1 Technopole de Sousse<br />Novation City, Tunisie</p></div>
                 </div>
                 <div className='telephone'>
                   <div className='telephonetext'>
@@ -473,18 +475,10 @@ const Home = () => {
                     <a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a>
                   </div>
                 </div>
+                <div className='contactbutton'>
+                  <a href="/contact"><b>CONTACT</b></a>
+                </div>
               </address>
-              <div className='contactbutton'>
-                <a href="#"><b>CONTACT</b></a>
-              </div>
-            </div>
-            <div className='newsletter'>
-              <h5>Inscrivez-vous sur notre Newsletter</h5>
-              <br />
-              <div className='newsletter_inside'>
-                <input className='newsletter_input' type="email" id="email" placeholder='Entrez votre adresse mail...' pattern=".+@globex\.com" size={30} required />
-                <input className="sincrirebutton" type="submit" value="S'inscrire" />
-              </div>
             </div>
           </div>
           <hr />
@@ -493,9 +487,9 @@ const Home = () => {
               <img src={require('.//image/Smartlogger_logo.png')} alt="Smartlogger logo" />
             </div>
             <div className='terms'>
-              <div className='copyright'><h6>©SmartLogger|</h6></div>
-              <div className='tandc'><a href='#'>Terms and conditions</a>|</div>
-              <div className='policy'><a href='#'>Privacy policy</a>|</div>
+              <div className='copyright'><h6>©SmartLogger |</h6></div>
+              <div className='tandc'><a href='#'>Terms and conditions</a> |</div>
+              <div className='policy'><a href='#'>Privacy policy</a> |</div>
               <div className='cookies'><a href='#'>Cookies</a></div>
             </div>
             <div className='followus'>

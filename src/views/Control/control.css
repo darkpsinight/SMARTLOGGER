@@ -3,10 +3,10 @@ body {
   font-family: "futura", sans-serif;
 }
 
-#back_image {
+#back_image_control {
   background-image: url(./../../../public/assets/images/7_black.png);
   height: 800px;
-  margin-bottom: -150px;
+  margin-bottom: -250px;
 }
 
 .icone img {
