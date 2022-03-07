@@ -6,7 +6,7 @@ body {
 #top {
   background-image: url(./../../../public/assets/images/9.png);
   background-size: 100% 100%;
-  height: 750px;
+  height: 800px;
 }
 
 .container1 {
@@ -902,6 +902,7 @@ body {
   background-color: #000;
   width: 100%;
   height: auto;
+  margin-top: 150px;
 }
 
 .aboutup {

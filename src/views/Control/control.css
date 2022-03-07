@@ -5,7 +5,8 @@ body {
 
 #back_image {
   background-image: url(./../../../public/assets/images/7_black.png);
-  height: 755px;
+  height: 800px;
+  margin-bottom: -150px;
 }
 
 .icone img {

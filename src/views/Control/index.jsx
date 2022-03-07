@@ -29,7 +29,7 @@ const Control = () => {
                                 </div>
                             </div>
                             <div className='headertext'>
-                                <p>SMART CONTROL consiste à sécuriser l'emmagasinage des produits alimentaires dans les entrepôts frigorifiques. En effet notre kit électronique<br />converti des indicateurs de performances, généralement des grandeurs physiques telles que la température, le taux d'humidité en des Data Cloud<br />accessibles à distance sur une base de données. L'utilisateur peut surveiller son espace à distance sur une plateforme web à travers l'internet. En<br />cas d'anomalie, instantanément il reçoit une alerte afin de réagir le plus rapide possible.</p>
+                                <p>SMART CONTROL consiste à sécuriser l'emmagasinage des produits alimentaires dans les entrepôts frigorifiques. En effet notre kit électronique converti des indicateurs de performances, généralement des grandeurs physiques telles que la température, le taux d'humidité en des Data Cloud accessibles à distance sur une base de données. L'utilisateur peut surveiller son espace à distance sur une plateforme web à travers l'internet. En cas d'anomalie, instantanément il reçoit une alerte afin de réagir le plus rapide possible.</p>
                                 <br />
                             </div>
                             <div className='buttonstop'>
@@ -45,7 +45,7 @@ const Control = () => {
                 </section>
             </div>
             {/* Footer */}
-            <div>
+            <div id='apropos'>
                 <div className='about'>
                     <div className='aboutup'>
                         <div className='solutions'>

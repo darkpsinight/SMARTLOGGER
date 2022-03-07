@@ -552,6 +552,15 @@ header
   backdrop-filter: blur(10px);
 }
 
+.header-area.header-sticky:hover {
+  min-height: 80px;
+  background-color: #D7D7D7;
+}
+
+.header-area.header-sticky:hover li a{
+  color: #828383;
+}
+
 .header-area .nav {
   margin-top: 30px;
 }

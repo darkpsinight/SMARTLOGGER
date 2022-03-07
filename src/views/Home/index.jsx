@@ -2,17 +2,17 @@ import React from 'react'
 import './home.css'
 import Slider from 'react-slick';
 
-import { AiFillInstagram, AiOutlineUserSwitch } from 'react-icons/ai'
-import { HiOutlineLightBulb } from 'react-icons/hi'
-import { GiBrain, GiFactory, GiPodiumWinner, GiStarsStack, GiPencilBrush } from 'react-icons/gi'
+import { AiFillInstagram } from 'react-icons/ai'
+import { GiFactory } from 'react-icons/gi'
 import { RiLeafLine } from 'react-icons/ri'
-import { BiBuildingHouse, BiCodeBlock } from 'react-icons/bi'
+import { BiBuildingHouse } from 'react-icons/bi'
 import { FiMapPin } from 'react-icons/fi'
-import { BsCloudCheck, BsCpu } from 'react-icons/bs'
-import { ImLinkedin2, ImMobile } from 'react-icons/im'
+import { ImLinkedin2 } from 'react-icons/im'
 import { FaFacebookF } from 'react-icons/fa'
 
+
 /* Slide settings */
+
 const settings = {
   dots: false,
   infinite: true,
@@ -49,7 +49,7 @@ const Home = () => {
         </section>
       </div>
       {/* Nos valeurs */}
-      <div className='e'>
+      <div id='iotsolutions'>
         <section>
           <div className="quote">
             <div className="nosvaleurs">
@@ -100,7 +100,7 @@ const Home = () => {
         </div>
       </div>
       {/* Les 4 cards */}
-      <div>
+      <div id='produits'>
         <div className='container'>
           <div className="content1">
             {/* card 1*/}
@@ -208,7 +208,7 @@ const Home = () => {
       {/* Les 6 cards */}
       <div>
         <div className='container'>
-          <div className='e'>
+          <div id='expertise'>
             <div className='expertisetitle'>
               <h1>Notre expertise</h1>
             </div>
@@ -415,7 +415,7 @@ const Home = () => {
         </div>
       </div>
       {/* Footer */}
-      <div>
+      <div id='apropos'>
         <div className='about'>
           <div className='aboutup'>
             <div className='solutions'>

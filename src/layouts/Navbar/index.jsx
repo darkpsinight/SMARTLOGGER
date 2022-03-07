@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css'
+import '../../views/Home/index.jsx'
 
 export default () => {
 
@@ -19,15 +20,15 @@ export default () => {
                                 {/* ***** Logo Start ***** */}
                                 <div className='logo'>
                                     <style>{css}</style>
-                                    <img src={require('.//../../../src/views/Home/image/smartloggerheader_logo.png')} alt="Smartlogger logo" />
+                                    <img src={require('.//img/Smartlogger_logo.png')} alt="Smartlogger logo" />
                                 </div>
                                 {/* ***** Logo End ***** */}
                                 {/* ***** Menu Start ***** */}
                                 <ul className="nav">
-                                    <li><a href="/solutions">IoT Solutions</a></li>
-                                    <li><a href="/produits" className="active">IoT Produits</a></li>
-                                    <li><a href="/espaceClient">Notre expertise</a></li>
-                                    <li><a href="/apropos">À propos</a></li>
+                                    <li><a href="#iotsolutions">IoT Solutions</a></li>
+                                    <li><a href="#produits" /* className="active" */>IoT Produits</a></li>
+                                    <li><a href="#expertise">Notre expertise</a></li>
+                                    <li><a href="#apropos">À propos</a></li>
                                     <div class="main-button-red">
                                         <div class="scroll-to-section"><a href="#contact">CONTACT</a></div>
                                     </div>
