@@ -4,10 +4,9 @@ import './apropos.css'
 import { AiFillInstagram } from 'react-icons/ai'
 import { ImLinkedin2 } from 'react-icons/im'
 import { FaFacebookF } from 'react-icons/fa'
-import { BsDownload } from 'react-icons/bs'
 
 
-const Irrigation = () => {
+const Apropos = () => {
     return (
         <div className='background-text'>
             <div>
@@ -148,4 +147,4 @@ const Irrigation = () => {
     )
 }
 
-export default Irrigation
+export default Apropos

@@ -1,0 +1,82 @@
+html,
+body {
+  font-family: "futura", sans-serif;
+}
+
+#background_image_contact {
+  background-image: url(./../../../public/assets/images/a-propos.png);
+  height: 755px;
+  margin-bottom: -250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 {
+    height: 600px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.contact_titre {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.contact_text {
+  color: white;
+  font-size: 20px;
+}
+
+.headertext p {
+  font-size: large;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(241, 239, 239, 0.904);
+  max-width: 600px;
+  height: 500px;
+  margin-top: -90px;
+  margin-left: 70px;
+  padding-right: 100px;
+  padding-left: 40px;
+}
+
+.form_title p {
+  color: #307e7f;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.input_name {
+  margin-bottom: 30px;
+}
+
+.input_email {
+  margin-bottom: 30px;
+}
+
+.input_message {
+    margin-bottom: 25px;
+}
+
+.button {
+    background-color: #307e7f;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-style: hidden;
+}
