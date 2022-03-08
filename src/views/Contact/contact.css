@@ -123,3 +123,7 @@ textarea {
   resize: vertical;
   max-height: 200px;
 }
+
+#form_message{
+    height: 100px;
+}

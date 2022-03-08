@@ -10,23 +10,22 @@ export default () => {
     `
 
     return (
-        <>
             <header className="header-area header-sticky">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
                             <nav className="main-nav">
                                 {/* ***** Logo Start ***** */}
-                                <div className='logo'>
+                                <a className="logo" href="/">
                                     <style>{css}</style>
                                     <img src={require('.//img/Smartlogger_logo.png')} alt="Smartlogger logo" />
-                                </div>
+                                </a>
                                 {/* ***** Logo End ***** */}
                                 {/* ***** Menu Start ***** */}
                                 <ul className="nav">
-                                    <li><a href="#iotsolutions">Nos valeurs</a></li>
-                                    <li><a href="#produits" /* className="active" */>Nos solutions</a></li>
-                                    <li><a href="#expertise">Notre expertise</a></li>
+                                    <li><a href="/#iotsolutions">Nos valeurs</a></li>
+                                    <li><a href="/#produits" /* className="active" */>Nos solutions</a></li>
+                                    <li><a href="/#expertise">Notre expertise</a></li>
                                     <li><a href="/apropos">À propos</a></li>
                                     <div class="main-button-red">
                                         <div class="scroll-to-section"><a href="/contact">CONTACT</a></div>
@@ -38,6 +37,5 @@ export default () => {
                     </div>
                 </div>
             </header>
-        </>
     )
 }

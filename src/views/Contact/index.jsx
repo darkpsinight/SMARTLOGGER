@@ -22,6 +22,7 @@ const Contact = () => {
                                     <br />
                                 </div>
                             </div>
+                            {/* form-contact */}
                             <div className='contact-form'>
                                 <form id="contact" action method="post">
                                     <div>
@@ -31,19 +32,19 @@ const Contact = () => {
                                         <div className="col-md-12 mt-5">
                                             <div className="textOnInput">
                                                 <label htmlFor="inputText">Nom</label>
-                                                <input className="form-control" type="text" placeholder="Nom" required/>
+                                                <input className="form-control" type="text" placeholder="Nom" required />
                                             </div>
                                         </div>
                                         <div className="col-md-12 mt-5">
                                             <div className="textOnInput">
                                                 <label htmlFor="inputText">Email</label>
-                                                <input className="form-control" type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" required/>
+                                                <input className="form-control" type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" required />
                                             </div>
                                         </div>
                                         <div className="col-md-12 mt-5">
                                             <div className="textOnInput">
                                                 <label htmlFor="inputText">Message</label>
-                                                <textarea className="form-control" type="text" pattern="[^ @]*@[^ @]*" placeholder="Message"/>
+                                                <textarea className="form-control" id='form_message' type="text" pattern="[^ @]*@[^ @]*" placeholder="Message" />
                                             </div>
                                         </div>
                                         <div className="input_button">
