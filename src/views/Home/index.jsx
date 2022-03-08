@@ -503,7 +503,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      {/*end footer*/}
     </div >
   )
 }

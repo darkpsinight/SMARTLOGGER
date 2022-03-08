@@ -57,38 +57,38 @@ const Apropos = () => {
                 </section>
             </div>
             {/* Footer */}
-            <div>
+            <div id='apropos'>
                 <div className='about'>
                     <div className='aboutup'>
                         <div className='solutions'>
                             <h5>Solutions</h5>
                             <br />
-                            <a href="#">Smart control</a>
-                            <a href="#">Smart monitoring</a>
+                            <a href="/control">Smart control</a>
+                            <a href="/control">Smart monitoring</a>
                             <a href="#">Smart collect</a>
-                            <a href="#">Smart irrigation</a>
+                            <a href="/irrigation">Smart irrigation</a>
                         </div>
                         <div className='produits'>
                             <h5>Produits</h5>
                             <br />
-                            <a href="#">Smart agriculture</a>
-                            <a href="#">Smart industry</a>
+                            <a href="/irrigation">Smart agriculture</a>
+                            <a href="/control">Smart industry</a>
                             <a href="#">Smart city</a>
                         </div>
                         <div className='espace'>
                             <h5>Espace client</h5>
                             <br />
-                            <a href="#">Smart control</a>
+                            <a href="/control">Smart control</a>
                             <a href="#">Smart monitoring</a>
                             <a href="#">Smart collect</a>
-                            <a href="#">Smart irrigation</a>
+                            <a href="/irrigation">Smart irrigation</a>
                             <a href="#">Smart healthcare</a>
                             <a href="#">Be Smart</a>
                         </div>
                         <div className='apropos'>
                             <h5>À propos</h5>
                             <br />
-                            <a href="#">About us</a>
+                            <a href="apropos">About us</a>
                             <a href="#">Career</a>
                         </div>
                         <div className='nous_contacter'>
@@ -97,7 +97,7 @@ const Apropos = () => {
                             <address>
                                 <div className='adresse'>
                                     <h6><b>Adresse: </b></h6>
-                                    <div className='adressetext'><p>Atelier N°1 Technopole<br />de Sousse Novation City, Tunisie</p></div>
+                                    <div className='adressetext'><p>Atelier N°1 Technopole de Sousse<br />Novation City, Tunisie</p></div>
                                 </div>
                                 <div className='telephone'>
                                     <div className='telephonetext'>
@@ -115,10 +115,10 @@ const Apropos = () => {
                                         <a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a>
                                     </div>
                                 </div>
+                                <div className='contactbutton'>
+                                    <a href="/contact"><b>CONTACT</b></a>
+                                </div>
                             </address>
-                            <div className='contactbutton'>
-                                <a href="#"><b>CONTACT</b></a>
-                            </div>
                         </div>
                     </div>
                     <hr />
@@ -127,9 +127,9 @@ const Apropos = () => {
                             <img src={require('.//img/Smartlogger_logo.png')} alt="Smartlogger logo" />
                         </div>
                         <div className='terms'>
-                            <div className='copyright'><h6>© SmartLogger | </h6></div>
-                            <div className='tandc'><a href='#'>Terms and conditions</a> | </div>
-                            <div className='policy'><a href='#'>Privacy policy</a> | </div>
+                            <div className='copyright'><h6>©SmartLogger |</h6></div>
+                            <div className='tandc'><a href='#'>Terms and conditions</a> |</div>
+                            <div className='policy'><a href='#'>Privacy policy</a> |</div>
                             <div className='cookies'><a href='#'>Cookies</a></div>
                         </div>
                         <div className='followus'>

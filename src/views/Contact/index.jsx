@@ -24,7 +24,7 @@ const Contact = () => {
                             </div>
                             {/* form-contact */}
                             <div className='contact-form'>
-                                <form id="contact" action method="post">
+                                <form id="contact" action="https://formsubmit.co/contact@smartlogger.tn" method="post">
                                     <div>
                                         <div className="form_title">
                                             <p>Contactez Nous</p>
@@ -49,7 +49,7 @@ const Contact = () => {
                                         </div>
                                         <div className="input_button">
                                             <fieldset>
-                                                <button type="submit" id="form-submit" className="button">Envoyer</button>
+                                                <button type="submit" value="Submit" id="form-submit" className="button">Envoyer</button>
                                             </fieldset>
                                         </div>
                                     </div>
@@ -58,40 +58,45 @@ const Contact = () => {
                         </div>
                     </div>
                 </section>
+                {/* google map */}
+                <div className="google-map-code">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1617.5897342122896!2d10.592226!3d35.8200722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8aebdb6f220d%3A0x83109a00ef5984cb!2sBusiness%20Incubator%20-%20Sousse%20pole!5e0!3m2!1sen!2stn!4v1646761151990!5m2!1sen!2stn" width="100%" height="450" style={{ border: 0, marginTop: 250 }} allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                {/* end google map */}
             </div>
             {/* Footer */}
-            <div>
+            <div id='apropos'>
                 <div className='about'>
                     <div className='aboutup'>
                         <div className='solutions'>
                             <h5>Solutions</h5>
                             <br />
-                            <a href="#">Smart control</a>
-                            <a href="#">Smart monitoring</a>
+                            <a href="/control">Smart control</a>
+                            <a href="/control">Smart monitoring</a>
                             <a href="#">Smart collect</a>
-                            <a href="#">Smart irrigation</a>
+                            <a href="/irrigation">Smart irrigation</a>
                         </div>
                         <div className='produits'>
                             <h5>Produits</h5>
                             <br />
-                            <a href="#">Smart agriculture</a>
-                            <a href="#">Smart industry</a>
+                            <a href="/irrigation">Smart agriculture</a>
+                            <a href="/control">Smart industry</a>
                             <a href="#">Smart city</a>
                         </div>
                         <div className='espace'>
                             <h5>Espace client</h5>
                             <br />
-                            <a href="#">Smart control</a>
+                            <a href="/control">Smart control</a>
                             <a href="#">Smart monitoring</a>
                             <a href="#">Smart collect</a>
-                            <a href="#">Smart irrigation</a>
+                            <a href="/irrigation">Smart irrigation</a>
                             <a href="#">Smart healthcare</a>
                             <a href="#">Be Smart</a>
                         </div>
                         <div className='apropos'>
                             <h5>À propos</h5>
                             <br />
-                            <a href="#">About us</a>
+                            <a href="apropos">About us</a>
                             <a href="#">Career</a>
                         </div>
                         <div className='nous_contacter'>
@@ -100,7 +105,7 @@ const Contact = () => {
                             <address>
                                 <div className='adresse'>
                                     <h6><b>Adresse: </b></h6>
-                                    <div className='adressetext'><p>Atelier N°1 Technopole<br />de Sousse Novation City, Tunisie</p></div>
+                                    <div className='adressetext'><p>Atelier N°1 Technopole de Sousse<br />Novation City, Tunisie</p></div>
                                 </div>
                                 <div className='telephone'>
                                     <div className='telephonetext'>
@@ -118,10 +123,10 @@ const Contact = () => {
                                         <a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a>
                                     </div>
                                 </div>
+                                <div className='contactbutton'>
+                                    <a href="/contact"><b>CONTACT</b></a>
+                                </div>
                             </address>
-                            <div className='contactbutton'>
-                                <a href="#"><b>CONTACT</b></a>
-                            </div>
                         </div>
                     </div>
                     <hr />
@@ -130,9 +135,9 @@ const Contact = () => {
                             <img src={require('.//img/Smartlogger_logo.png')} alt="Smartlogger logo" />
                         </div>
                         <div className='terms'>
-                            <div className='copyright'><h6>© SmartLogger | </h6></div>
-                            <div className='tandc'><a href='#'>Terms and conditions</a> | </div>
-                            <div className='policy'><a href='#'>Privacy policy</a> | </div>
+                            <div className='copyright'><h6>©SmartLogger |</h6></div>
+                            <div className='tandc'><a href='#'>Terms and conditions</a> |</div>
+                            <div className='policy'><a href='#'>Privacy policy</a> |</div>
                             <div className='cookies'><a href='#'>Cookies</a></div>
                         </div>
                         <div className='followus'>
@@ -146,6 +151,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            {/* end Footer */}
         </div>
     )
 }
