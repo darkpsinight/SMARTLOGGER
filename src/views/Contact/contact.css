@@ -12,7 +12,7 @@ body {
 }
 
 .container1 {
-    height: 600px;
+  height: 600px;
 }
 
 .row {
@@ -46,8 +46,8 @@ body {
   flex-direction: column;
   background-color: rgba(241, 239, 239, 0.904);
   max-width: 600px;
-  height: 500px;
-  margin-top: -90px;
+  height: 600px;
+  margin-top: -110px;
   margin-left: 70px;
   padding-right: 100px;
   padding-left: 40px;
@@ -61,22 +61,65 @@ body {
   margin-bottom: 30px;
 }
 
-.input_name {
-  margin-bottom: 30px;
-}
-
-.input_email {
-  margin-bottom: 30px;
-}
-
 .input_message {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .button {
-    background-color: #307e7f;
-    color: white;
-    width: 150px;
-    height: 50px;
-    border-style: hidden;
+  background-color: #307e7f;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-style: hidden;
+}
+
+.textOnInput {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.textOnInput label {
+  position: absolute;
+  top: -15px;
+  left: 23px;
+  padding: 2px;
+  z-index: 1;
+}
+
+.textOnInput label:after {
+  content: " ";
+  background-color: rgba(241, 239, 239, 0.904);
+  width: 100%;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #267bd2;
+  font-size: 15px;
+}
+
+.form-control {
+  box-shadow: none !important;
+  border-color: #267bd2;
+  background-color: rgb(241, 239, 239);
+  height: 50px;
+  border-width: 2px;
+}
+
+.form-control:focus {
+  border-color: #267bd2;
+  background-color: rgb(241, 239, 239);
+}
+
+textarea {
+  resize: vertical;
+  max-height: 200px;
 }

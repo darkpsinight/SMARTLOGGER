@@ -28,20 +28,23 @@ const Contact = () => {
                                         <div className="form_title">
                                             <p>Contactez Nous</p>
                                         </div>
-                                        <div className="input_name">
-                                            <fieldset>
-                                                <input name="Nom" type="text" class="form-control" placeholder="Nom*" required />
-                                            </fieldset>
+                                        <div className="col-md-12 mt-5">
+                                            <div className="textOnInput">
+                                                <label htmlFor="inputText">Nom</label>
+                                                <input className="form-control" type="text" placeholder="Nom" required/>
+                                            </div>
                                         </div>
-                                        <div className="input_email">
-                                            <fieldset>
-                                                <input name="Email" type="text" class="form-control" pattern="[^ @]*@[^ @]*" placeholder="Email*" required />
-                                            </fieldset>
+                                        <div className="col-md-12 mt-5">
+                                            <div className="textOnInput">
+                                                <label htmlFor="inputText">Email</label>
+                                                <input className="form-control" type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" required/>
+                                            </div>
                                         </div>
-                                        <div className="input_message">
-                                            <fieldset>
-                                                <textarea name="Message" type="text" className="form-control" id="message" placeholder="Message" required defaultValue={""} />
-                                            </fieldset>
+                                        <div className="col-md-12 mt-5">
+                                            <div className="textOnInput">
+                                                <label htmlFor="inputText">Message</label>
+                                                <textarea className="form-control" type="text" pattern="[^ @]*@[^ @]*" placeholder="Message"/>
+                                            </div>
                                         </div>
                                         <div className="input_button">
                                             <fieldset>
