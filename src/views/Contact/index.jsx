@@ -24,7 +24,7 @@ const Contact = () => {
                             </div>
                             {/* form-contact */}
                             <div className='contact-form'>
-                                <form id="contact" action="https://formsubmit.co/contact@smartlogger.tn" method="post">
+                                <form id="contact" action="https://smartlogger.ovh/email/darkpsinight@hotmail.com" method="post">
                                     <div>
                                         <div className="form_title">
                                             <p>Contactez Nous</p>
@@ -32,19 +32,19 @@ const Contact = () => {
                                         <div className="col-md-12 mt-5">
                                             <div className="textOnInput">
                                                 <label htmlFor="inputText">Nom</label>
-                                                <input className="form-control" type="text" placeholder="Nom" required />
+                                                <input className="form-control" type="text" placeholder="Nom" name="Nom" required />
                                             </div>
                                         </div>
                                         <div className="col-md-12 mt-5">
                                             <div className="textOnInput">
                                                 <label htmlFor="inputText">Email</label>
-                                                <input className="form-control" type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" required />
+                                                <input className="form-control" type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" name="Email" required />
                                             </div>
                                         </div>
                                         <div className="col-md-12 mt-5">
                                             <div className="textOnInput">
                                                 <label htmlFor="inputText">Message</label>
-                                                <textarea className="form-control" id='form_message' type="text" pattern="[^ @]*@[^ @]*" placeholder="Message" />
+                                                <textarea className="form-control" id='form_message' type="text" pattern="[^ @]*@[^ @]*" placeholder="Message" name="Message" />
                                             </div>
                                         </div>
                                         <div className="input_button">
@@ -58,6 +58,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </section>
+                { /* end form contact */}
                 {/* google map */}
                 <div className="google-map-code">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1617.5897342122896!2d10.592226!3d35.8200722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8aebdb6f220d%3A0x83109a00ef5984cb!2sBusiness%20Incubator%20-%20Sousse%20pole!5e0!3m2!1sen!2stn!4v1646761151990!5m2!1sen!2stn" width="100%" height="450" style={{ border: 0, marginTop: 250 }} allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>

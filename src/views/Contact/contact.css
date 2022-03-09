@@ -51,6 +51,7 @@ body {
   margin-left: 70px;
   padding-right: 100px;
   padding-left: 40px;
+  z-index: 1;
 }
 
 .form_title p {
@@ -88,7 +89,7 @@ body {
 
 .textOnInput label:after {
   content: " ";
-  background-color: rgba(241, 239, 239, 0.904);
+  background-color: rgb(241, 239, 239);
   width: 100%;
   height: 13px;
   position: absolute;
@@ -124,10 +125,15 @@ textarea {
   max-height: 200px;
 }
 
-#form_message{
-    height: 100px;
+#form_message {
+  height: 100px;
 }
 
-.about{
-    margin-top: -6px
+/* .about{
+    margin-top: -256px
+} */
+
+.google-map-code {
+  z-index: -1;
+  margin-bottom: -256px;
 }

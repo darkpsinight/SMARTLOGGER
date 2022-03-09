@@ -925,6 +925,9 @@ body {
 }
 
 /* Footer */
+#apropos{
+  margin-top: 250px;
+}
 
 .about {
   display: flex;
