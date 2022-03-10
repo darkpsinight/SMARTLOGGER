@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "futura", sans-serif;
+  font-family: 'futura', sans-serif;
 }
 
 #background_image_apropos {
@@ -39,8 +39,8 @@ body {
   margin-right: 100px;
 }
 
-.mission_text{
-    margin-top: -5px;
+.mission_text {
+  margin-top: -5px;
 }
 
 .mission_icon {
@@ -56,8 +56,8 @@ body {
   margin-right: 100px;
 }
 
-.vision_text{
-    margin-top: -5px;
+.vision_text {
+  margin-top: -5px;
 }
 
 .vision_icon {

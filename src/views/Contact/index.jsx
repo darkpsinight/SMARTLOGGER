@@ -1,190 +1,172 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Joi from 'joi'
+import Form from '../../utils/Form'
+import Mail from '../../service/mail'
+import Footer from './../Footer/index'
+import { toast } from 'react-toastify'
 import './contact.css'
 
-import { AiFillInstagram } from 'react-icons/ai'
-import { ImLinkedin2 } from 'react-icons/im'
-import { FaFacebookF } from 'react-icons/fa'
-
-import Http from '../../service/http'
-import Joi from "joi";
-import Form from '../../utils/Form'
-
 class Contact extends Form {
-    state = {
-        data: { email: "", nom: "", message: "" },
-        errors: {},
-    };
+  state = {
+    data: { email: '', nom: '', message: '' },
+    errors: {},
+  }
 
-    globalSchema = {
-        nom: Joi.string()
-            .min(3)
-            .max(15)
-            .required()
-            .label("Nom"),
-        email: Joi.string()
-            .email({ minDomainSegments: 2, tlds: { allow: ["com", "net"] } })
-            .required()
-            .label("Email"),
-        message: Joi.string()
-            .min(10)
-            .max(255)
-            .label("Message"),
-    };
+  globalSchema = {
+    nom: Joi.string().min(3).max(15).required().label('Nom'),
+    email: Joi.string()
+      .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
+      .required()
+      .label('Email'),
+    message: Joi.string().min(10).max(255).label('Message'),
+  }
 
-    doSubmit() {
-        console.log(...this.state.data)
-    };
+  // Take a copy of global schema to validate 1 specific field
+  schema = Joi.object(this.globalSchema)
 
-    render() {
-        return (
-            <div className='background-text' >
-                <div>
-                    <section class="heading-page header-text" id="background_image_contact">
-                        <div class="container1">
-                            <div class="row">
-                                <div className='text'>
-                                    <div className='contact_titre'>
-                                        <p>Parlez-nous de votre besoin</p>
-                                    </div>
-                                    <div className='contact_text'>
-                                        <p>N'hésitez pas à nous contacter pour toutes informations complémentaires. Nous serions très heureux de recevoir et traiter votre consultation.</p>
-                                        <br />
-                                    </div>
-                                </div>
-                                {/* form-contact */}
-                                <div className='contact-form'>
-                                    <form id="contact" onSubmit={this.handleSubmit}>
-                                        <div>
-                                            <div className="form_title">
-                                                <p>Contactez Nous</p>
-                                            </div>
-                                            <div className="col-md-12 mt-5">
-                                                <div className="textOnInput">
-                                                    <label htmlFor="inputText">Nom</label>
-                                                    <input className="form-control" type="text" placeholder="Nom" name="nom" required onChange={this.handleChange} />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-12 mt-5">
-                                                <div className="textOnInput">
-                                                    <label htmlFor="inputText">Email</label>
-                                                    <input className="form-control" type="text" pattern="[^ @]*@[^ @]*" placeholder="Email" name="email" required onChange={this.handleChange} />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-12 mt-5">
-                                                <div className="textOnInput">
-                                                    <label htmlFor="inputText">Message</label>
-                                                    <textarea className="form-control" id='form_message' type="text" pattern="[^ @]*@[^ @]*" placeholder="Message" name="message" onChange={this.handleChange} />
-                                                </div>
-                                            </div>
-                                            <div className="input_button">
-                                                <fieldset>
-                                                    <button type="submit" value="Submit" id="form-submit" className="button">Envoyer</button>
-                                                </fieldset>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    { /* end form contact */}
-                    {/* google map */}
-                    <div className="google-map-code">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1617.5897342122896!2d10.592226!3d35.8200722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8aebdb6f220d%3A0x83109a00ef5984cb!2sBusiness%20Incubator%20-%20Sousse%20pole!5e0!3m2!1sen!2stn!4v1646761151990!5m2!1sen!2stn" width="100%" height="450" style={{ border: 0, marginTop: 250 }} allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                    {/* end google map */}
-                </div>
-                {/* Footer */}
-                <div id='apropos' >
-                    <div className='about'>
-                        <div className='aboutup'>
-                            <div className='solutions'>
-                                <h5>Solutions</h5>
-                                <br />
-                                <a href="/control">Smart control</a>
-                                <a href="/control">Smart monitoring</a>
-                                <a href="#">Smart collect</a>
-                                <a href="/irrigation">Smart irrigation</a>
-                            </div>
-                            <div className='produits'>
-                                <h5>Produits</h5>
-                                <br />
-                                <a href="/irrigation">Smart agriculture</a>
-                                <a href="/control">Smart industry</a>
-                                <a href="#">Smart city</a>
-                            </div>
-                            <div className='espace'>
-                                <h5>Espace client</h5>
-                                <br />
-                                <a href="/control">Smart control</a>
-                                <a href="#">Smart monitoring</a>
-                                <a href="#">Smart collect</a>
-                                <a href="/irrigation">Smart irrigation</a>
-                                <a href="#">Smart healthcare</a>
-                                <a href="#">Be Smart</a>
-                            </div>
-                            <div className='apropos'>
-                                <h5>À propos</h5>
-                                <br />
-                                <a href="apropos">About us</a>
-                                <a href="#">Career</a>
-                            </div>
-                            <div className='nous_contacter'>
-                                <h5>Nous contacter</h5>
-                                <br />
-                                <address>
-                                    <div className='adresse'>
-                                        <h6><b>Adresse: </b></h6>
-                                        <div className='adressetext'><p>Atelier N°1 Technopole de Sousse<br />Novation City, Tunisie</p></div>
-                                    </div>
-                                    <div className='telephone'>
-                                        <div className='telephonetext'>
-                                            <h6><b>Téléphone:</b></h6>
-                                        </div>
-                                        <div className='telephonenumber'>
-                                            <a>+(216) 52 017 986</a>
-                                        </div>
-                                    </div>
-                                    <div className='email'>
-                                        <div className='emailtext'>
-                                            <h6><b>Email:</b></h6>
-                                        </div>
-                                        <div className='emaillink'>
-                                            <a href="mailto:contact@smartlogger.tn">contact@smartlogger.tn</a>
-                                        </div>
-                                    </div>
-                                    <div className='contactbutton'>
-                                        <a href="/contact"><b>CONTACT</b></a>
-                                    </div>
-                                </address>
-                            </div>
-                        </div>
-                        <hr />
-                        <div className='aboutdown'>
-                            <div className='logo'>
-                                <img src={require('.//img/Smartlogger_logo.png')} alt="Smartlogger logo" />
-                            </div>
-                            <div className='terms'>
-                                <div className='copyright'><h6>©SmartLogger |</h6></div>
-                                <div className='tandc'><a href='#'>Terms and conditions</a> |</div>
-                                <div className='policy'><a href='#'>Privacy policy</a> |</div>
-                                <div className='cookies'><a href='#'>Cookies</a></div>
-                            </div>
-                            <div className='followus'>
-                                <h5>Follow us</h5>
-                                <div className='iconsfollow'>
-                                    <div className='instagram'><a href="#"> <AiFillInstagram /></a></div>
-                                    <div className='linkedin'><a href="#"> <ImLinkedin2 /></a></div>
-                                    <div className='facebook'><a href="#"> <FaFacebookF /></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* end Footer */}
-            </div >
-        )
+  // Send Email
+  async doSubmit() {
+    try {
+      Mail.send(this.state.data)
+      toast.success('Mail was successfully sent')
+      this.handleReset()
+    } catch (ex) {
+      console.log(ex)
+      if (ex.response && ex.response.status === 400)
+        toast.error(ex.response.data.message)
     }
+  }
+
+  render() {
+    const { data, errors } = this.state
+    return (
+      <div className='background-text'>
+        <div>
+          <section
+            class='heading-page header-text'
+            id='background_image_contact'
+          >
+            <div class='container1'>
+              <div class='row'>
+                <div className='text'>
+                  <div className='contact_titre'>
+                    <p>Parlez-nous de votre besoin</p>
+                  </div>
+                  <div className='contact_text'>
+                    <p>
+                      N'hésitez pas à nous contacter pour toutes informations
+                      complémentaires. Nous serions très heureux de recevoir et
+                      traiter votre consultation.
+                    </p>
+                    <br />
+                  </div>
+                </div>
+                {/* form-contact */}
+                <div className='contact-form'>
+                  <form id='contact' onSubmit={this.handleSubmit}>
+                    <div>
+                      <div className='form_title'>
+                        <p>Contactez Nous</p>
+                      </div>
+                      <div className='col-md-12 mt-5'>
+                        <div className='textOnInput'>
+                          <label htmlFor='inputText'>Nom</label>
+                          <input
+                            className='form-control'
+                            type='text'
+                            placeholder='Nom'
+                            name='nom'
+                            required
+                            value={data.nom}
+                            onChange={this.handleChange}
+                          />
+                          {errors.nom && (
+                            <span className='form-text text-danger'>
+                              {errors.nom}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      <div className='col-md-12 mt-5'>
+                        <div className='textOnInput'>
+                          <label htmlFor='inputText'>Email</label>
+                          <input
+                            className='form-control'
+                            type='text'
+                            pattern='[^ @]*@[^ @]*'
+                            placeholder='Email'
+                            name='email'
+                            required
+                            value={data.email}
+                            onChange={this.handleChange}
+                          />
+                          {errors.email && (
+                            <span className='form-text text-danger'>
+                              {errors.email}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <div className='col-md-12 mt-5'>
+                        <div className='textOnInput'>
+                          <label htmlFor='inputText'>Message</label>
+                          <textarea
+                            className='form-control'
+                            id='form_message'
+                            type='text'
+                            pattern='[^ @]*@[^ @]*'
+                            placeholder='Message'
+                            name='message'
+                            value={data.message}
+                            onChange={this.handleChange}
+                          />
+                          {errors.message && (
+                            <span className='form-text text-danger'>
+                              {errors.message}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <div className='input_button'>
+                        <fieldset>
+                          <button
+                            type='submit'
+                            value='Submit'
+                            id='form-submit'
+                            className='button'
+                            disabled={this.isEnabledButton()}
+                          >
+                            Envoyer
+                          </button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* end form contact */}
+          {/* google map */}
+          <div className='google-map-code'>
+            <iframe
+              src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1617.5897342122896!2d10.592226!3d35.8200722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd8aebdb6f220d%3A0x83109a00ef5984cb!2sBusiness%20Incubator%20-%20Sousse%20pole!5e0!3m2!1sen!2stn!4v1646761151990!5m2!1sen!2stn'
+              width='100%'
+              height='450'
+              style={{ border: 0, marginTop: 250 }}
+              allowfullscreen=''
+              loading='lazy'
+              aria-hidden='false'
+              tabindex='0'
+            ></iframe>
+          </div>
+          {/* end google map */}
+        </div>
+        <Footer />
+      </div>
+    )
+  }
 }
 
 export default Contact

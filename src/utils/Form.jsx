@@ -1,73 +1,75 @@
-import { Component } from "react";
-import Joi from "joi";
+import { Component } from 'react'
+import Joi from 'joi'
 
 class Form extends Component {
-    state = {
-        data: {},
-        errors: {},
-    };
-    eliminateCommas = (string) => {
-        return string.replace(/"/g, "");
-    }
+  state = {
+    data: {},
+    errors: {},
+  }
 
-    // Validate the form using joi. Returns null when there is no error or return errors object
-    validate = () => {
-        const option = { abortEarly: false };
-        const result = this.schema.validate(this.state.data, option);
+  eliminateCommas = (string) => {
+    return string.replace(/"/g, '')
+  }
 
-        if (!result.error) return null;
+  // Validate the form using joi. Returns null when there is no error or return errors object
+  validate = () => {
+    const option = { abortEarly: false }
+    const result = this.schema.validate(this.state.data, option)
 
-        const errors = {};
-        for (let item of result.error.details)
-            errors[item.path[0]] = this.eliminateCommas(item.message);
+    if (!result.error) return null
 
-        return errors;
-    };
+    const errors = {}
+    for (let item of result.error.details)
+      errors[item.path[0]] = this.eliminateCommas(item.message)
 
-    // Validate specific property
-    validateProperty = ({ name, value }) => {
-        const obj = { [name]: value };
-        const schema = Joi.object({ [name]: this.globalSchema[name] });
-        const { error } = schema.validate(obj);
-        return error ? error.details[0].message : null;
-    };
+    return errors
+  }
 
-    // Verify each propery after key stroke event
-    handleChange = ({ currentTarget: input }) => {
-        const errors = { ...this.state.errors };
-        const errMessage = this.validateProperty(input);
+  // Validate specific property
+  validateProperty = ({ name, value }) => {
+    const obj = { [name]: value }
+    const schema = Joi.object({ [name]: this.globalSchema[name] })
+    const { error } = schema.validate(obj)
+    return error ? error.details[0].message : null
+  }
 
-        const { name, value } = input;
-        if (errMessage) errors[name] = this.eliminateCommas(errMessage);
-        else delete errors[name];
+  // Verify each propery after key stroke event
+  handleChange = ({ currentTarget: input }) => {
+    const errors = { ...this.state.errors }
+    const errMessage = this.validateProperty(input)
 
-        const data = { ...this.state.data };
-        data[name] = value;
-        this.setState({ data, errors });
-    };
+    const { name, value } = input
+    if (errMessage) errors[name] = this.eliminateCommas(errMessage)
+    else delete errors[name]
 
-    // Reset Data form
-    handleReset = () => {
-        const data = { ...this.state.data };
-        Object.keys(data).map((key) => (data[key] = ""));
-        this.setState({ data });
-    };
+    const data = { ...this.state.data }
+    data[name] = value
+    this.setState({ data, errors })
+  }
 
-    // Enable or disable button
-    isEnabledButton = () => {
-        return this.validate() === null ? false : true;
-    };
+  // Enable or disable button
+  isEnabledButton = () => {
+    return this.validate() === null ? false : true
+  }
 
-    // Submit form process
-    handleSubmit = (e) => {
-        e.preventDefault();
-        const errors = this.validate();
-        this.setState({ errors: errors || {} });
+  // Reset Data form
+  handleReset = () => {
+    const data = { ...this.state.data }
+    Object.keys(data).map((key) => (data[key] = ''))
+    console.log(data)
+    this.setState({ data })
+  }
 
-        if (errors) return;
+  // Submit form process
+  handleSubmit = (e) => {
+    e.preventDefault()
+    const errors = this.validate()
+    this.setState({ errors: errors || {} })
 
-        this.doSubmit();
-    };
+    if (errors) return
+
+    this.doSubmit()
+  }
 }
 
-export default Form;
+export default Form
