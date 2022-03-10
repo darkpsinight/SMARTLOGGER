@@ -16,13 +16,13 @@ export default () => {
           <div className='col-12'>
             <nav className='main-nav'>
               {/* ***** Logo Start ***** */}
-              <Link className='logo' to='/'>
+              <a href='/#' className='logo'>
                 <style>{css}</style>
                 <img
                   src={require('.//img/Smartlogger_logo.png')}
                   alt='Smartlogger logo'
                 />
-              </Link>
+              </a>
               {/* ***** Logo End ***** */}
               {/* ***** Menu Start ***** */}
               <ul className='nav'>

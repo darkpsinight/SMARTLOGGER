@@ -5,7 +5,7 @@ function send({ nom, email, message }) {
     name: nom,
     from: 'barhoumi.ragheb@gmail.com',
     sendTo: email,
-    subject: 'Hello from our team',
+    subject: 'Form Contact from SmartLogger website',
     message: message,
   }
   const url = 'https://smartlogger.ovh/email'

@@ -49,7 +49,7 @@ const Home = () => {
                   <Link to='/contact'>Essayer SML 🠖</Link>
                 </div>
                 <div className='decouvrirbutton'>
-                  <Link to='#smartsolution'>Découvrir</Link>
+                  <a href='/#produits'>Découvrir</a>
                 </div>
               </div>
             </div>
