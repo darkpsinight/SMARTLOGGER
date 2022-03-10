@@ -80,7 +80,7 @@ const Home = () => {
         <div className='engagement'>
           <div className='engagementicon'>
             <div className='icon1'>
-              <img
+              <img className='engagement-icon'
                 src='./../../assets/images/engagement.png'
                 alt='engagement'
               ></img>
@@ -91,7 +91,7 @@ const Home = () => {
         <div className='innovation'>
           <div className='innovationicon'>
             <div className='icon2'>
-              <img
+              <img className='innovation-icon'
                 src='./../../assets/images/innovation.png'
                 alt='innovation'
               ></img>
@@ -102,7 +102,7 @@ const Home = () => {
         <div className='exellence'>
           <div className='exellenceicon'>
             <div className='icon3'>
-              <img
+              <img className='exellence-icon'
                 src='./../../assets/images/Excellence.png'
                 alt='Excellence'
               ></img>
@@ -113,7 +113,7 @@ const Home = () => {
         <div className='satisfaction'>
           <div className='satisfactionicon'>
             <div className='icon4'>
-              <img
+              <img className='satisfaction-icon'
                 src='./../../assets/images/Satisfaction.png'
                 alt='Satisfaction'
               ></img>
