@@ -70,6 +70,12 @@ body {
   font-size: 17px;
 }
 
+.text_box {
+  max-width: 60%;
+  text-align: justify;
+  margin-bottom: 100px;
+}
+
 /*no valeurs*/
 
 .nosvaleurs {
@@ -81,10 +87,13 @@ body {
 }
 
 .nosactions {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: #757575;
   font-family: "futura", sans-serif;
   font-size: 17px;
+  margin-bottom: -70px;
 }
 
 .iconsandtexts {

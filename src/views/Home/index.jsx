@@ -24,24 +24,15 @@ const Home = () => {
       <div>
         <section class='heading-page header-text' id='top'>
           <div class='container1'>
-            <div class='e'>
+            <div class='text_box'>
               <div className='headertxt'>
                 <div className='headertitle'>
                   <p>Leader en IoT solutions</p>
                 </div>
                 <p>
-                  SMART LOGGER (SML) est une entreprise innovante ayant pour
-                  objectif d'accélérer
+                  SMART LOGGER (SML) est une entreprise innovante ayant pour objectif d'accélérer la transformation digitale. SML propose des solutions de
+                  monitoring permettant aux clients d'intégrer la composante télécommunication dans la gestion de leur projets.
                 </p>
-                <p>
-                  la transformation digitale. SML propose des solutions de
-                  monitoring permettant
-                </p>
-                <p>
-                  aux clients d'intégrer la composante télécommunication dans la
-                  gestion de leur
-                </p>
-                <p>projets.</p>
                 <br />
               </div>
               <div className='buttonstop'>
@@ -658,7 +649,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

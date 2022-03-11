@@ -55,7 +55,7 @@ body {
 }
 
 .form_title p {
-  color: #307e7f;
+  color: #68C5C7;
   font-size: 25px;
   font-weight: bold;
   margin-top: 30px;
@@ -67,11 +67,12 @@ body {
 }
 
 .button {
-  background-color: #307e7f;
+  background-color: #68C5C7;
   color: white;
   width: 150px;
   height: 50px;
   border-style: hidden;
+  border-radius: 22px;
 }
 
 .textOnInput {
