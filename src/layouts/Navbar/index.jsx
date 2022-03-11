@@ -14,11 +14,11 @@ export default () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
-    const listenScrollEvent = (e) => setIsScrolled(window.scrollY > 50);
+  const listenScrollEvent = (e) => setIsScrolled(window.scrollY > 50);
 
-    useEffect(() => {
-        window.addEventListener("scroll", listenScrollEvent);
-    }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+  }, []);
 
   return (
     <header className='header-area header-sticky'>
@@ -28,7 +28,7 @@ export default () => {
             <nav className='main-nav'>
               {/* ***** Logo Start ***** */}
               <a href='/#' className='logo'>
-              <style>{css}</style>
+                <style>{css}</style>
                 <img
                   src={isScrolled ? coloredLogo : whiteLogo}
                   alt={
