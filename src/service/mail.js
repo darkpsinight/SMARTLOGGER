@@ -3,7 +3,7 @@ import http from './http'
 function send({ nom, email, message }) {
   const body = {
     name: nom,
-    from: 'contact@smartlogger.com',
+    from: 'contact@smartlogger.tn',
     sendTo: email,
     subject: 'Form Contact from SmartLogger website',
     message: message,

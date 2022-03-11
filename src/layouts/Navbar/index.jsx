@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../views/Home/index.jsx'
 import { Link } from 'react-router-dom'
+import { useEffect } from "react";
+import whiteLogo from "../Navbar/img/Smartlogger_white_logo.png";
+import coloredLogo from "../Navbar/img/Smartlogger_colored_logo.png";
 
 export default () => {
   const css = `
@@ -8,6 +11,14 @@ export default () => {
         width: 230px;
     }
     `
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+    const listenScrollEvent = (e) => setIsScrolled(window.scrollY > 50);
+
+    useEffect(() => {
+        window.addEventListener("scroll", listenScrollEvent);
+    }, []);
 
   return (
     <header className='header-area header-sticky'>
@@ -17,10 +28,14 @@ export default () => {
             <nav className='main-nav'>
               {/* ***** Logo Start ***** */}
               <a href='/#' className='logo'>
-                <style>{css}</style>
+              <style>{css}</style>
                 <img
-                  src={require('.//img/Smartlogger_logo.png')}
-                  alt='Smartlogger logo'
+                  src={isScrolled ? coloredLogo : whiteLogo}
+                  alt={
+                    isScrolled
+                      ? "SmartLogger white logo"
+                      : "SmartLogger colored logo"
+                  }
                 />
               </a>
               {/* ***** Logo End ***** */}
