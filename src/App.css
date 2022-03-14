@@ -1,12 +1,3 @@
-@font-face {
-  font-family: "futura";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../public//assets/fonts/futura\ medium\ bt.ttf"); /* IE9 Compat Modes */
-  src: local("futura"),
-    url("../public//assets/fonts/futura\ medium\ bt.ttf") format("truetype"); /* IE6-IE8 */
-}
-
 body {
-  font-family: "futura";
+  font-family: 'Nunito Sans', sans-serif;
 }
