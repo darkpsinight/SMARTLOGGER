@@ -1,0 +1,5 @@
+.header-area.header-sticky:hover .logo {
+  content: url("./img/Smartlogger_colored_logo.png");
+  margin-top: 10px;
+  padding-bottom: 20px;
+}

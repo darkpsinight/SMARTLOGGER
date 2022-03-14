@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useEffect } from "react";
 import whiteLogo from "../Navbar/img/Smartlogger_white_logo.png";
 import coloredLogo from "../Navbar/img/Smartlogger_colored_logo.png";
+import './navbar.css'
 
 export default () => {
   const css = `
